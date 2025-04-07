@@ -1,0 +1,289 @@
+{{ 'component-cart.css' | asset_url | stylesheet_tag }}
+{{ 'component-totals.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  /* Ajustes de padding basados en la configuración de la sección */
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  /* --- Estilos para los totales --- */
+  .totals {
+    margin-top: 2rem; /* Espacio superior */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espacio vertical entre filas */
+  }
+  .totals__row {
+    display: flex;
+    /* Mantenemos space-between para alinear el texto a la izquierda y el importe a la derecha */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  .totals__row:last-child {
+    border-bottom: none;
+  }
+
+  /* Títulos de cada fila */
+  .cart-summary__title {
+    font-size: 1.4rem;
+    color: #555;
+    margin: 0;
+    font-weight: 600;
+    margin-right: 1rem; /* <-- Separa un poco el texto del número */
+  }
+
+  /* Monto genérico */
+  .cart-summary__amount {
+    font-size: 1.5rem; /* Más grande para destacar la cifra */
+    color: #000;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  /* Descuento (en verde) */
+  .cart-summary__amount--discount {
+    color: #008000;
+  }
+
+  /* Total sin descuento tachado */
+  .cart-summary__amount--crossed {
+    text-decoration: line-through;
+    color: #777;
+  }
+
+  /* Total con descuento en rojo */
+  .cart-summary__amount--final {
+    color: #ff0000;
+    font-weight: 700;
+  }
+{%- endstyle -%}
+
+<div
+  class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
+  id="main-cart-footer"
+  data-id="{{ section.id }}"
+>
+  <div class="page-width">
+    <div class="cart__footer isolate section-{{ section.id }}-padding">
+      {%- if settings.show_cart_note -%}
+        <!-- Campo de notas del carrito -->
+        <cart-note class="cart__note field">
+          <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
+          <textarea
+            class="text-area field__input"
+            name="note"
+            form="cart"
+            id="Cart-note"
+            placeholder="{{ 'sections.cart.note' | t }}"
+          >{{ cart.note }}</textarea>
+        </cart-note>
+      {%- endif -%}
+
+      <div class="cart__blocks">
+        {% for block in section.blocks %}
+          {%- case block.type -%}
+            {%- when '@app' -%}
+              {% render block %}
+            {%- when 'subtotal' -%}
+              <div class="js-contents" {{ block.shopify_attributes }}>
+                <!-- Bloque de descuentos a nivel de carrito (si existen) -->
+                <div>
+                  {%- if cart.cart_level_discount_applications.size > 0 -%}
+                    <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
+                      {%- for discount in cart.cart_level_discount_applications -%}
+                        <li class="discounts__discount discounts__discount--position">
+                          {%- render 'icon-discount' -%}
+                          {{ discount.title | escape }}
+                          (-{{ discount.total_allocated_amount | money }})
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                </div>
+
+                {%- comment -%}
+                  Cálculo de totales:
+                  - total_compare_price: Total sin descuento
+                  - total_final_price: Total con descuento
+                  - total_savings: Descuento total
+                {%- endcomment -%}
+                {% assign total_compare_price = 0 %}
+                {% assign total_final_price = 0 %}
+                {% for item in cart.items %}
+                  {% if item.variant.compare_at_price and item.variant.compare_at_price > item.variant.price %}
+                    {% assign compare_line_price = item.variant.compare_at_price | times: item.quantity %}
+                    {% assign total_compare_price = total_compare_price | plus: compare_line_price %}
+                    {% assign total_final_price = total_final_price | plus: item.final_line_price %}
+                  {% elsif item.original_line_price != item.final_line_price %}
+                    {% assign total_compare_price = total_compare_price | plus: item.original_line_price %}
+                    {% assign total_final_price = total_final_price | plus: item.final_line_price %}
+                  {% else %}
+                    {% assign total_compare_price = total_compare_price | plus: item.final_line_price %}
+                    {% assign total_final_price = total_final_price | plus: item.final_line_price %}
+                  {% endif %}
+                {% endfor %}
+                {% assign total_savings = total_compare_price | minus: total_final_price %}
+
+             <!-- Sección de totales apilados -->
+<div class="totals">
+  <!-- Total sin descuento (solo se tachará si hay descuento) -->
+  <div class="totals__row cart-summary__row">
+    <p class="cart-summary__title">Total sin descuento:</p>
+    <!-- Agregamos la clase tachada únicamente si total_savings > 0 -->
+    <p class="cart-summary__amount{% if total_savings > 0 %} cart-summary__amount--crossed{% endif %}">
+      {{ total_compare_price | money }}
+    </p>
+  </div>
+
+  {% if total_savings > 0 %}
+    <!-- Descuento -->
+    <div class="totals__row cart-summary__row">
+      <p class="cart-summary__title">Descuento:</p>
+      <p class="cart-summary__amount cart-summary__amount--discount">
+        -{{ total_savings | money }}
+      </p>
+    </div>
+
+    <!-- Total con descuento en rojo -->
+    <div class="totals__row cart-summary__row">
+      <p class="cart-summary__title">Total con descuento:</p>
+      <p class="cart-summary__amount cart-summary__amount--final">
+        {{ total_final_price | money }}
+      </p>
+    </div>
+  {% endif %}
+</div>
+                <!-- Texto sobre impuestos/envíos -->
+                <small class="tax-note caption-large rte">
+                  {%- if cart.duties_included and cart.taxes_included -%}
+                    {%- if shop.shipping_policy.body == blank -%}
+                      {{ 'sections.cart.duties_and_taxes_included_shipping_at_checkout_without_policy' | t }}
+                    {%- else -%}
+                      {{
+                        'sections.cart.duties_and_taxes_included_shipping_at_checkout_with_policy_html'
+                        | t: link: shop.shipping_policy.url
+                      }}
+                    {%- endif -%}
+                  {%- elsif cart.duties_included == false and cart.taxes_included -%}
+                    {%- if shop.shipping_policy.body == blank -%}
+                      {{ 'sections.cart.taxes_included_shipping_at_checkout_without_policy' | t }}
+                    {%- else -%}
+                      {{
+                        'sections.cart.taxes_included_shipping_at_checkout_with_policy_html'
+                        | t: link: shop.shipping_policy.url
+                      }}
+                    {%- endif -%}
+                  {%- elsif cart.duties_included and cart.taxes_included == false -%}
+                    {%- if shop.shipping_policy.body == blank -%}
+                      {{ 'sections.cart.duties_included_taxes_at_checkout_shipping_at_checkout_without_policy' | t }}
+                    {%- else -%}
+                      {{
+                        'sections.cart.duties_and_taxes_included_shipping_at_checkout_with_policy_html'
+                        | t: link: shop.shipping_policy.url
+                      }}
+                    {%- endif -%}
+                  {%- elsif cart.duties_included == false and cart.taxes_included == false -%}
+                    {%- if shop.shipping_policy.body == blank -%}
+                      {{ 'sections.cart.taxes_at_checkout_shipping_at_checkout_without_policy' | t }}
+                    {%- else -%}
+                      {{
+                        'sections.cart.taxes_at_checkout_shipping_at_checkout_with_policy_html'
+                        | t: link: shop.shipping_policy.url
+                      }}
+                    {%- endif -%}
+                  {%- endif -%}
+                </small>
+              </div>
+            {%- else -%}
+              <!-- Botones de checkout -->
+              <div class="cart__ctas" {{ block.shopify_attributes }}>
+                <button
+                  type="submit"
+                  id="checkout"
+                  class="cart__checkout-button button"
+                  name="checkout"
+                  {% if cart == empty %}
+                    disabled
+                  {% endif %}
+                  form="cart"
+                >
+                  {{ 'sections.cart.checkout' | t }}
+                </button>
+              </div>
+
+              {%- if additional_checkout_buttons -%}
+                <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
+                  {{ content_for_additional_checkout_buttons }}
+                </div>
+              {%- endif -%}
+          {%- endcase -%}
+        {% endfor %}
+
+        <div id="cart-errors"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-cart-footer.name",
+  "class": "cart__footer-wrapper",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "subtotal",
+      "name": "t:sections.main-cart-footer.blocks.subtotal.name",
+      "limit": 1
+    },
+    {
+      "type": "buttons",
+      "name": "t:sections.main-cart-footer.blocks.buttons.name",
+      "limit": 1
+    },
+    {
+      "type": "@app"
+    }
+  ]
+}
+{% endschema %}

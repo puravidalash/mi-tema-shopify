@@ -1,0 +1,226 @@
+{
+  "sections": {
+    "gp_global_section_541231622796608624_ErN7MP": {
+      "type": "gp-global-section-541231622796608624",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": ""
+      }
+    },
+    "gp_global_section_527992251452752722_mNaXXr": {
+      "type": "gp-global-section-527992251452752722",
+      "disabled": true,
+      "settings": {
+        "section_preload": "off_lazy_script"
+      }
+    },
+    "slideshow_3yaQwE": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_CgjzcP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Copia_de_ofertas_7.png",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/pestanas",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-52a753ea-5bf4-49ac-a466-0b8ea7e31bed",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_d6bixE": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Diseno_sin_titulo_9.png",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "Pestañas",
+            "link": "shopify:\/\/collections\/pestanas",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-52a753ea-5bf4-49ac-a466-0b8ea7e31bed",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_KFd79c": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Diseno_sin_titulo_4_68c1f4e4-108c-48c8-9328-40d05a5d5282.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Adhesivos",
+            "link": "shopify:\/\/collections\/adhesivos",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-52a753ea-5bf4-49ac-a466-0b8ea7e31bed",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_giLyJm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Diseno_sin_titulo_7.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Pre-tratamiento",
+            "link": "shopify:\/\/collections\/pre-tratamiento",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-52a753ea-5bf4-49ac-a466-0b8ea7e31bed",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_CgjzcP",
+        "slide_d6bixE",
+        "slide_KFd79c",
+        "slide_giLyJm"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Presentación de diapositivas sobre tu marca"
+      }
+    },
+    "1716816773ffaf2a6e": {
+      "type": "apps",
+      "blocks": {
+        "essential_announcer_app_block_eLnz3c": {
+          "type": "shopify:\/\/apps\/essential-announcement\/blocks\/app-block\/93b5429f-c8d6-4c33-ae14-250fd84f361b",
+          "settings": {
+            "id": "df2b4a97-ee85-4893-b05c-830d1001370a"
+          }
+        }
+      },
+      "block_order": [
+        "essential_announcer_app_block_eLnz3c"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "gp_global_section_527879919921791763_eJwTTb": {
+      "type": "gp-global-section-527879919921791763",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": ""
+      }
+    },
+    "featured_collection_jbU9bi": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".card__heading {font-size: 15px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; min-height: 2em; color: black;}",
+        ".price {font-size: 20px;}",
+        ".card {background-color: ;}",
+        ".price--on-sale {color: red;}"
+      ],
+      "settings": {
+        "title": "Ofertas",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "ofertas",
+        "products_to_show": 9,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-ce4a737b-d0b8-4435-a0fd-bd693d069b06",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 8,
+        "padding_bottom": 4
+      }
+    },
+    "featured_collection_BTdxVW": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".card__heading {font-size: 15px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; min-height: 2em;}",
+        ".price {font-size: 20px;}",
+        ".card {}",
+        ".price--on-sale {color: red;}"
+      ],
+      "settings": {
+        "title": "Más <strong>vendidos<\/strong>",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "mas-vendidos",
+        "products_to_show": 9,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 8,
+        "padding_bottom": 4
+      }
+    },
+    "gp_global_section_509366754225423463_JXRaXm": {
+      "type": "gp-global-section-509366754225423463",
+      "settings": {
+        "section_preload": "off_lazy_script"
+      }
+    },
+    "gp_global_section_509366809573458847_x8VMcV": {
+      "type": "gp-global-section-509366809573458847",
+      "settings": {
+        "section_preload": "off_lazy_script"
+      }
+    }
+  },
+  "order": [
+    "gp_global_section_541231622796608624_ErN7MP",
+    "gp_global_section_527992251452752722_mNaXXr",
+    "slideshow_3yaQwE",
+    "1716816773ffaf2a6e",
+    "gp_global_section_527879919921791763_eJwTTb",
+    "featured_collection_jbU9bi",
+    "featured_collection_BTdxVW",
+    "gp_global_section_509366754225423463_JXRaXm",
+    "gp_global_section_509366809573458847_x8VMcV"
+  ]
+}

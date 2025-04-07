@@ -1,0 +1,486 @@
+
+{% render 'gp-head', 'isThemeSection: true' %}
+<style {% if section.settings.section_preload == "false" %} class="gps-link gps-style" type="text/disabled-css" {% endif %}>.gps-560358899375407984.gps.gpsil [style*="--bg:"]{background:var(--bg)}.gps-560358899375407984.gps.gpsil [style*="--bga:"]{background-attachment:var(--bga)}.gps-560358899375407984.gps.gpsil [style*="--bgc:"]{background-color:var(--bgc)}.gps-560358899375407984.gps.gpsil [style*="--bgi:"]{background-image:var(--bgi)}.gps-560358899375407984.gps.gpsil [style*="--bgp:"]{background-position:var(--bgp)}.gps-560358899375407984.gps.gpsil [style*="--bgr:"]{background-repeat:var(--bgr)}.gps-560358899375407984.gps.gpsil [style*="--bgs:"]{background-size:var(--bgs)}.gps-560358899375407984.gps.gpsil [style*="--b:"]{border:var(--b)}.gps-560358899375407984.gps.gpsil [style*="--bc:"]{border-color:var(--bc)}.gps-560358899375407984.gps.gpsil [style*="--bs:"]{border-style:var(--bs)}.gps-560358899375407984.gps.gpsil [style*="--bw:"]{border-width:var(--bw)}.gps-560358899375407984.gps.gpsil [style*="--shadow:"]{box-shadow:var(--shadow)}.gps-560358899375407984.gps.gpsil [style*="--c:"]{color:var(--c)}.gps-560358899375407984.gps.gpsil [style*="--cg:"]{-moz-column-gap:var(--cg);column-gap:var(--cg)}.gps-560358899375407984.gps.gpsil [style*="--gtc:"]{grid-template-columns:var(--gtc)}.gps-560358899375407984.gps.gpsil [style*="--jc:"]{justify-content:var(--jc)}.gps-560358899375407984.gps.gpsil [style*="--op:"]{opacity:var(--op)}.gps-560358899375407984.gps.gpsil [style*="--o:"]{order:var(--o)}.gps-560358899375407984.gps.gpsil [style*="--pc:"]{place-content:var(--pc)}.gps-560358899375407984.gps.gpsil [style*="--p:"]{padding:var(--p)}.gps-560358899375407984.gps.gpsil [style*="--pb:"]{padding-bottom:var(--pb)}.gps-560358899375407984.gps.gpsil [style*="--pl:"]{padding-left:var(--pl)}.gps-560358899375407984.gps.gpsil [style*="--pr:"]{padding-right:var(--pr)}.gps-560358899375407984.gps.gpsil [style*="--pt:"]{padding-top:var(--pt)}.gps-560358899375407984.gps.gpsil [style*="--ta:"]{text-align:var(--ta)}.gps-560358899375407984.gps.gpsil [style*="--t:"]{transform:var(--t)}.gps-560358899375407984.gps.gpsil [style*="--w:"]{width:var(--w)}@media only screen and (max-width:1024px){.gps-560358899375407984.gps.gpsil [style*="--pl-tablet:"]{padding-left:var(--pl-tablet)}.gps-560358899375407984.gps.gpsil [style*="--pr-tablet:"]{padding-right:var(--pr-tablet)}.gps-560358899375407984.gps.gpsil [style*="--w-tablet:"]{width:var(--w-tablet)}}@media only screen and (max-width:767px){.gps-560358899375407984.gps.gpsil [style*="--pl-mobile:"]{padding-left:var(--pl-mobile)}.gps-560358899375407984.gps.gpsil [style*="--pr-mobile:"]{padding-right:var(--pr-mobile)}.gps-560358899375407984.gps.gpsil [style*="--w-mobile:"]{width:var(--w-mobile)}}.gps-560358899375407984 .gp-relative{position:relative}.gps-560358899375407984 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-560358899375407984 .gp-mb-0{margin-bottom:0}.gps-560358899375407984 .gp-flex{display:flex}.gps-560358899375407984 .gp-grid{display:grid}.gps-560358899375407984 .\!gp-hidden{display:none!important}.gps-560358899375407984 .gp-hidden{display:none}.gps-560358899375407984 .gp-max-w-full{max-width:100%}.gps-560358899375407984 .gp-flex-col{flex-direction:column}.gps-560358899375407984 .gp-gap-y-0{row-gap:0}.gps-560358899375407984 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-560358899375407984 .gp-duration-200{transition-duration:.2s}.gps-560358899375407984 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@media (max-width:1024px){.gps-560358899375407984 .tablet\:\!gp-hidden{display:none!important}.gps-560358899375407984 .tablet\:gp-hidden{display:none}}@media (max-width:767px){.gps-560358899375407984 .mobile\:\!gp-hidden{display:none!important}.gps-560358899375407984 .mobile\:gp-hidden{display:none}}.gps-560358899375407984 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}</style>
+
+       
+      
+            <section
+              class="gp-mx-auto gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+              style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:0px;--pl-tablet:0px;--pl-mobile:0px;--pr:0px;--pr-tablet:0px;--pr-mobile:0px"
+            >
+              
+    <div
+      enableLazyloadImage id="gvwjzlkMPF" data-id="gvwjzlkMPF"
+        style="--pt:var(--g-s-2xl);--pb:var(--g-s-2xl);--d:grid;--d-tablet:grid;--d-mobile:grid;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--op:100%;--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gvwjzlkMPF gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage tag="Col" label="Block" type="component"
+      style="--jc:start"
+      class="gFOKMN_bKS gp-relative gp-flex gp-flex-col"
+    >
+      
+  
+    <div
+      
+      style="--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--op:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--ta:left"
+      data-keep-class="true"
+      class="gAPePb8wf2 "
+    ><div><!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tipos de Extensiones de Pestañas</title>
+  <!-- Animate.css (opcional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Nuestro CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Contenedor de tarjetas -->
+  <div id="my-lash-section">
+    <div class="product-grid">
+      <!-- TARJETA 1: PREMADE FANS (video de fondo) -->
+      <div class="product-card premade-fans" data-mobile-toggle>
+        <!-- Video de fondo -->
+        <video class="card-bg-video" autoplay loop muted playsinline>
+          <source src="https://cdn.shopify.com/videos/c/o/v/f5bad758063d4be6a070cba45c4cc736.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <div class="offer-label">Oferta</div>
+        <div class="detail-label">desde 480 abanicos</div>
+        <!-- Imagen del producto -->
+        <div class="product-image">
+          <img src="https://cdn.shopify.com/s/files/1/0819/3307/4759/files/Diseno_sin_titulo_31.png?v=1743530599" alt="Premade Fans">
+        </div>
+        <div class="product-content">
+          <h2 class="product-name">Premade Fans</h2>
+          <p class="product-description">
+            Tecnología en abanico para volumen natural&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+          <p class="product-price">
+            <span class="old-price">€16,95</span>
+            <span class="sale-price">€14,99</span>
+          </p>
+          <a href="https://puravidalash.com/collections/premade-fan" class="buy-button">Ver</a>
+        </div>
+      </div>
+      
+      <!-- TARJETA 2: PESTAÑAS YY (video de fondo) -->
+      <div class="product-card yy-lash" data-mobile-toggle>
+        <!-- Video de fondo -->
+        <video class="card-bg-video" autoplay loop muted playsinline>
+          <source src="https://cdn.shopify.com/videos/c/o/v/cc25095490ce4627bb2189b9bdf61b44.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <div class="offer-label">Oferta</div>
+        <div class="detail-label">16 filas</div>
+        <div class="product-image">
+          <img src="https://cdn.shopify.com/s/files/1/0819/3307/4759/files/2_46535e5a-0404-44ad-8c01-c38325c61ecd.png?v=1743530619" alt="Pestañas YY">
+        </div>
+        <div class="product-content">
+          <h2 class="product-name">Pestañas YY</h2>
+          <p class="product-description">
+            Fusión de fibras para un acabado suave y moderno
+          </p>
+          <p class="product-price">
+            <span class="old-price">€12,95</span>
+            <span class="sale-price">€11,95</span>
+          </p>
+          <a href="https://puravidalash.com/collections/pestanas-yy" class="buy-button">Ver</a>
+        </div>
+      </div>
+      
+      <!-- TARJETA 3: PESTAÑAS W (video de fondo) -->
+      <div class="product-card w-lash" data-mobile-toggle>
+        <!-- Video de fondo -->
+        <video class="card-bg-video" autoplay loop muted playsinline>
+          <source src="https://cdn.shopify.com/videos/c/o/v/6666835726bc4891892a263284d4e3e7.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <div class="offer-label">Oferta</div>
+        <div class="detail-label">16 filas</div>
+        <div class="product-image">
+          <img src="https://cdn.shopify.com/s/files/1/0819/3307/4759/files/3_056ea4ac-012f-4452-b5d4-c871a69fc7c3.png?v=1743530619" alt="Pestañas W">
+        </div>
+        <div class="product-content">
+          <h2 class="product-name">Pestañas W</h2>
+          <p class="product-description">
+            Ideal para un estilo dinámico y con cuerpo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+          <p class="product-price">
+            <span class="old-price">€12,95</span>
+            <span class="sale-price">€11,95</span>
+          </p>
+          <a href="https://puravidalash.com/collections/pestanas-w" class="buy-button">Ver</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html></div></div>
+  
+      <style id="custom-css-gAPePb8wf2">
+        /* Importar la fuente Abel */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+/* Encapsular en #my-lash-section */
+#my-lash-section {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+}
+
+/* Contenedor principal */
+#my-lash-section .product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+  justify-content: center;
+}
+
+/* Tarjeta de producto */
+#my-lash-section .product-card {
+  position: relative;
+  flex: 1 1 500px;
+  max-width: 500px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: color 0.4s ease, transform 0.4s ease, background-color 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Efecto hover o hover-active: se vuelve transparente para ver el video */
+#my-lash-section .premade-fans:hover,
+#my-lash-section .premade-fans.hover-active,
+#my-lash-section .yy-lash:hover,
+#my-lash-section .yy-lash.hover-active,
+#my-lash-section .w-lash:hover,
+#my-lash-section .w-lash.hover-active {
+  background-color: transparent;
+}
+
+/* Video de fondo: cubre toda la tarjeta */
+#my-lash-section .product-card .card-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Etiquetas (badges) */
+.offer-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.detail-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* Cambios en las etiquetas de detalle para tarjetas YY y W */
+#my-lash-section .yy-lash:hover .detail-label,
+#my-lash-section .yy-lash.hover-active .detail-label {
+  background-color: #fff;
+  color: #000;
+}
+#my-lash-section .w-lash:hover .detail-label,
+#my-lash-section .w-lash.hover-active .detail-label {
+  background-color: #2cd5c4;
+  color: #000;
+}
+
+/* Efecto hover: mueve la tarjeta 5px hacia arriba */
+#my-lash-section .product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contenedor de imagen */
+#my-lash-section .product-image {
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+  position: relative;
+}
+#my-lash-section .product-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Animación en hover: se anima la imagen del producto */
+#my-lash-section .product-card:hover .product-image img,
+#my-lash-section .product-card.hover-active .product-image img {
+  animation: imageAnim 2s forwards;
+}
+
+@keyframes imageAnim {
+  0% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.08) rotate(2deg); }
+  100% { transform: scale(1.12) rotate(0deg); }
+}
+
+/* Contenido interno */
+#my-lash-section .product-content {
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Títulos y tipografía */
+#my-lash-section .product-name {
+  margin-top: 0;
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: color 0.4s ease, transform 0.4s ease;
+  letter-spacing: normal;
+}
+#my-lash-section .product-card:hover .product-name,
+#my-lash-section .product-card.hover-active .product-name {
+  transform: scale(1.05);
+}
+
+/* Colores de texto según tarjeta */
+#my-lash-section .premade-fans .product-name {
+  color: #000;
+}
+#my-lash-section .yy-lash .product-name {
+  color: #000;
+}
+#my-lash-section .yy-lash:hover .product-name,
+#my-lash-section .yy-lash.hover-active .product-name {
+  color: #fff;
+}
+#my-lash-section .w-lash .product-name {
+  color: #000;
+}
+#my-lash-section .w-lash:hover .product-name,
+#my-lash-section .w-lash.hover-active .product-name {
+  color: #2cd5c4;
+}
+
+/* Descripciones */
+#my-lash-section .product-description {
+  font-family: Abel, sans-serif;
+  font-size: 24px;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  transition: font-size 0.4s ease, color 0.4s ease;
+  letter-spacing: normal;
+}
+#my-lash-section .premade-fans:hover .product-description,
+#my-lash-section .premade-fans.hover-active .product-description {
+  color: #000;
+}
+#my-lash-section .yy-lash:hover .product-description,
+#my-lash-section .yy-lash.hover-active .product-description {
+  color: #fff;
+}
+#my-lash-section .w-lash:hover .product-description,
+#my-lash-section .w-lash.hover-active .product-description {
+  color: #000;
+}
+
+/* Precios */
+#my-lash-section .product-price {
+  font-size: 44px;
+  margin-bottom: 10px;
+  transition: font-size 0.4s ease;
+  letter-spacing: normal;
+}
+#my-lash-section .sale-price {
+  color: red;
+  font-size: 32px;
+}
+#my-lash-section .old-price {
+  font-size: 27px;
+  color: rgba(0,0,0,0.6);
+  text-decoration: line-through;
+  margin-left: 8px;
+  transition: color 0.4s ease;
+}
+#my-lash-section .yy-lash:hover .old-price,
+#my-lash-section .yy-lash.hover-active .old-price {
+  color: #fff;
+}
+
+/* Botón de compra */
+#my-lash-section .buy-button {
+  display: inline-block;
+  background-color: #2cd5c4;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+#my-lash-section .buy-button:hover {
+  background-color: #2cd5c4;
+}
+/* Cambios en botones para tarjetas Premade Fans y Pestañas YY */
+#my-lash-section .premade-fans:hover .buy-button,
+#my-lash-section .premade-fans.hover-active .buy-button {
+  background-color: #000;
+  color: #fff;
+}
+#my-lash-section .yy-lash:hover .buy-button,
+#my-lash-section .yy-lash.hover-active .buy-button {
+  background-color: #fff;
+  color: #000;
+}
+/* Para Pestañas W se mantiene siempre el color base */
+
+/* Responsive (Móvil) */
+@media (max-width: 768px) {
+  #my-lash-section .product-name {
+    font-size: 33px;
+  }
+  #my-lash-section .product-description {
+    font-size: 18px;
+  }
+  #my-lash-section .sale-price {
+    font-size: 29px;
+  }
+  #my-lash-section .old-price {
+    font-size: 25px;
+  }
+  .offer-label,
+  .detail-label {
+    top: 20px;
+  }
+  /* Aseguramos object-fit: cover en móviles */
+  #my-lash-section .card-bg-video {
+    object-fit: cover;
+  }
+}
+
+      </style>
+    
+      <script id="custom-js-gAPePb8wf2">
+        try {
+          document.addEventListener('DOMContentLoaded', function() {
+  const section = document.getElementById('my-lash-section');
+  if (!section) return;
+
+  // Detectar si se trata de un dispositivo táctil (móvil o tablet)
+  const isTouchDevice = ('maxTouchPoints' in navigator && navigator.maxTouchPoints > 0) ||
+                        window.matchMedia("(pointer: coarse)").matches;
+
+  // Redirección al hacer clic en cualquier parte de la tarjeta, excepto en el botón "Ver"
+  const allCards = section.querySelectorAll('.product-card');
+  allCards.forEach(card => {
+    card.addEventListener('click', function(e) {
+      if (e.target.closest('.buy-button')) return;
+      const link = this.querySelector('.buy-button');
+      if (link) {
+        window.location.href = link.href;
+      }
+    });
+  });
+
+  // Función para reiniciar el video de fondo
+  function restartVideo(card) {
+    const video = card.querySelector('.card-bg-video');
+    if (video) {
+      video.currentTime = 0;
+      video.play();
+    }
+  }
+
+  if (!isTouchDevice) {
+    // En desktop: activar el efecto hover con mouseenter/mouseleave
+    const cards = section.querySelectorAll('.product-card[data-mobile-toggle]');
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        // Elimina la clase hover-active de todas y la añade solo a la que tiene el hover
+        cards.forEach(c => c.classList.remove('hover-active'));
+        this.classList.add('hover-active');
+        restartVideo(this);
+      });
+      card.addEventListener('mouseleave', function() {
+        this.classList.remove('hover-active');
+      });
+    });
+  } else {
+    // En dispositivos táctiles (móviles y tablets): usar IntersectionObserver para controlar el estado según la visibilidad
+    const cards = section.querySelectorAll('.product-card[data-mobile-toggle]');
+    const observerOptions = {
+      root: null,
+      threshold: 0.5
+    };
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('hover-active');
+          restartVideo(entry.target);
+        } else {
+          entry.target.classList.remove('hover-active');
+        }
+      });
+    }, observerOptions);
+    cards.forEach(card => observer.observe(card));
+
+    // Además, al tocar la tarjeta (excepto el botón "Ver") se activa el efecto
+    cards.forEach(card => {
+      card.addEventListener('click', function(e) {
+        if (e.target.closest('.buy-button')) return;
+        this.classList.toggle('hover-active');
+      });
+    });
+  }
+});
+
+        } catch(err){}
+      </script>
+    
+    </div>
+    </div>
+  
+            </section>
+           
+    
+
+
+{% schema %}
+  {
+    "presets": [{ "name": "html" }],
+    "name": "html",
+    "tag": "section",
+    "class": "gps-560358899375407984 gps gpsil",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/807a28-6b/apps/gempages-cro/app/shopify/edit?pageType=THEME_SECTION&editorId=560358899375407984)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"off_lazy_script"},{"type":"text","label":"Checksum","id":"checksum"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {"es":{}}
+  }
+{% endschema %}

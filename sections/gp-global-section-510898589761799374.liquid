@@ -1,0 +1,240 @@
+
+{% render 'gp-head', 'isThemeSection: true' %}
+<style {% if section.settings.section_preload == "false" %} class="gps-link gps-style" type="text/disabled-css" {% endif %}>.gps-510898589761799374.gps.gpsil [style*="--aspect:"]{aspect-ratio:var(--aspect)}.gps-510898589761799374.gps.gpsil [style*="--bg:"]{background:var(--bg)}.gps-510898589761799374.gps.gpsil [style*="--bga:"]{background-attachment:var(--bga)}.gps-510898589761799374.gps.gpsil [style*="--bgc:"]{background-color:var(--bgc)}.gps-510898589761799374.gps.gpsil [style*="--bgi:"]{background-image:var(--bgi)}.gps-510898589761799374.gps.gpsil [style*="--bgp:"]{background-position:var(--bgp)}.gps-510898589761799374.gps.gpsil [style*="--bgr:"]{background-repeat:var(--bgr)}.gps-510898589761799374.gps.gpsil [style*="--bgs:"]{background-size:var(--bgs)}.gps-510898589761799374.gps.gpsil [style*="--b:"]{border:var(--b)}.gps-510898589761799374.gps.gpsil [style*="--bb:"]{border-bottom:var(--bb)}.gps-510898589761799374.gps.gpsil [style*="--bc:"]{border-color:var(--bc)}.gps-510898589761799374.gps.gpsil [style*="--bblr:"]{border-bottom-left-radius:var(--bblr)}.gps-510898589761799374.gps.gpsil [style*="--bbrr:"]{border-bottom-right-radius:var(--bbrr)}.gps-510898589761799374.gps.gpsil [style*="--radius:"]{border-radius:var(--radius)}.gps-510898589761799374.gps.gpsil [style*="--bs:"]{border-style:var(--bs)}.gps-510898589761799374.gps.gpsil [style*="--bt:"]{border-top:var(--bt)}.gps-510898589761799374.gps.gpsil [style*="--btlr:"]{border-top-left-radius:var(--btlr)}.gps-510898589761799374.gps.gpsil [style*="--btrr:"]{border-top-right-radius:var(--btrr)}.gps-510898589761799374.gps.gpsil [style*="--bw:"]{border-width:var(--bw)}.gps-510898589761799374.gps.gpsil [style*="--bottom:"]{bottom:var(--bottom)}.gps-510898589761799374.gps.gpsil [style*="--shadow:"]{box-shadow:var(--shadow)}.gps-510898589761799374.gps.gpsil [style*="--c:"]{color:var(--c)}.gps-510898589761799374.gps.gpsil [style*="--cg:"]{-moz-column-gap:var(--cg);column-gap:var(--cg)}.gps-510898589761799374.gps.gpsil [style*="--ff:"]{font-family:var(--ff)}.gps-510898589761799374.gps.gpsil [style*="--size:"]{font-size:var(--size)}.gps-510898589761799374.gps.gpsil [style*="--weight:"]{font-weight:var(--weight)}.gps-510898589761799374.gps.gpsil [style*="--fs:"]{font-style:var(--fs)}.gps-510898589761799374.gps.gpsil [style*="--gtc:"]{grid-template-columns:var(--gtc)}.gps-510898589761799374.gps.gpsil [style*="--h:"]{height:var(--h)}.gps-510898589761799374.gps.gpsil [style*="--jc:"]{justify-content:var(--jc)}.gps-510898589761799374.gps.gpsil [style*="--left:"]{left:var(--left)}.gps-510898589761799374.gps.gpsil [style*="--ls:"]{letter-spacing:var(--ls)}.gps-510898589761799374.gps.gpsil [style*="--lh:"]{line-height:var(--lh)}.gps-510898589761799374.gps.gpsil [style*="--m:"]{margin:var(--m)}.gps-510898589761799374.gps.gpsil [style*="--mb:"]{margin-bottom:var(--mb)}.gps-510898589761799374.gps.gpsil [style*="--objf:"]{-o-object-fit:var(--objf);object-fit:var(--objf)}.gps-510898589761799374.gps.gpsil [style*="--op:"]{opacity:var(--op)}.gps-510898589761799374.gps.gpsil [style*="--o:"]{order:var(--o)}.gps-510898589761799374.gps.gpsil [style*="--pc:"]{place-content:var(--pc)}.gps-510898589761799374.gps.gpsil [style*="--p:"]{padding:var(--p)}.gps-510898589761799374.gps.gpsil [style*="--pb:"]{padding-bottom:var(--pb)}.gps-510898589761799374.gps.gpsil [style*="--pl:"]{padding-left:var(--pl)}.gps-510898589761799374.gps.gpsil [style*="--pr:"]{padding-right:var(--pr)}.gps-510898589761799374.gps.gpsil [style*="--pt:"]{padding-top:var(--pt)}.gps-510898589761799374.gps.gpsil [style*="--pos:"]{position:var(--pos)}.gps-510898589761799374.gps.gpsil [style*="--right:"]{right:var(--right)}.gps-510898589761799374.gps.gpsil [style*="--ta:"]{text-align:var(--ta)}.gps-510898589761799374.gps.gpsil [style*="--top:"]{top:var(--top)}.gps-510898589761799374.gps.gpsil [style*="--t:"]{transform:var(--t)}.gps-510898589761799374.gps.gpsil [style*="--w:"]{width:var(--w)}.gps-510898589761799374.gps.gpsil [style*="--z:"]{z-index:var(--z)}.gps-510898589761799374.gps.gpsil [style*="--line-clamp:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp);display:-webkit-box;overflow:hidden}@media only screen and (max-width:1023px){.gps-510898589761799374.gps.gpsil [style*="--aspect-tablet:"]{aspect-ratio:var(--aspect-tablet)}.gps-510898589761799374.gps.gpsil [style*="--size-tablet:"]{font-size:var(--size-tablet)}.gps-510898589761799374.gps.gpsil [style*="--h-tablet:"]{height:var(--h-tablet)}.gps-510898589761799374.gps.gpsil [style*="--lh-tablet:"]{line-height:var(--lh-tablet)}.gps-510898589761799374.gps.gpsil [style*="--pb-tablet:"]{padding-bottom:var(--pb-tablet)}.gps-510898589761799374.gps.gpsil [style*="--pl-tablet:"]{padding-left:var(--pl-tablet)}.gps-510898589761799374.gps.gpsil [style*="--pr-tablet:"]{padding-right:var(--pr-tablet)}.gps-510898589761799374.gps.gpsil [style*="--pt-tablet:"]{padding-top:var(--pt-tablet)}.gps-510898589761799374.gps.gpsil [style*="--w-tablet:"]{width:var(--w-tablet)}.gps-510898589761799374.gps.gpsil [style*="--line-clamp-tablet:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-tablet);display:-webkit-box;overflow:hidden}}@media only screen and (max-width:767px){.gps-510898589761799374.gps.gpsil [style*="--aspect-mobile:"]{aspect-ratio:var(--aspect-mobile)}.gps-510898589761799374.gps.gpsil [style*="--bottom-mobile:"]{bottom:var(--bottom-mobile)}.gps-510898589761799374.gps.gpsil [style*="--size-mobile:"]{font-size:var(--size-mobile)}.gps-510898589761799374.gps.gpsil [style*="--h-mobile:"]{height:var(--h-mobile)}.gps-510898589761799374.gps.gpsil [style*="--lh-mobile:"]{line-height:var(--lh-mobile)}.gps-510898589761799374.gps.gpsil [style*="--mb-mobile:"]{margin-bottom:var(--mb-mobile)}.gps-510898589761799374.gps.gpsil [style*="--pl-mobile:"]{padding-left:var(--pl-mobile)}.gps-510898589761799374.gps.gpsil [style*="--pr-mobile:"]{padding-right:var(--pr-mobile)}.gps-510898589761799374.gps.gpsil [style*="--w-mobile:"]{width:var(--w-mobile)}.gps-510898589761799374.gps.gpsil [style*="--line-clamp-mobile:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-mobile);display:-webkit-box;overflow:hidden}}.gps-510898589761799374 .gp-relative{position:relative}.gps-510898589761799374 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-510898589761799374 .gp-mb-0{margin-bottom:0}.gps-510898589761799374 .\!gp-inline{display:inline!important}.gps-510898589761799374 .gp-flex{display:flex}.gps-510898589761799374 .gp-grid{display:grid}.gps-510898589761799374 .\!gp-hidden{display:none!important}.gps-510898589761799374 .gp-hidden{display:none}.gps-510898589761799374 .gp-h-full{height:100%}.gps-510898589761799374 .gp-w-full{width:100%}.gps-510898589761799374 .gp-max-w-full{max-width:100%}.gps-510898589761799374 .gp-flex-col{flex-direction:column}.gps-510898589761799374 .gp-gap-y-0{row-gap:0}.gps-510898589761799374 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-510898589761799374 .gp-duration-200{transition-duration:.2s}.gps-510898589761799374 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@media (max-width:1023px){.gps-510898589761799374 .tablet\:\!gp-hidden{display:none!important}.gps-510898589761799374 .tablet\:gp-hidden{display:none}}@media (max-width:767px){.gps-510898589761799374 .mobile\:\!gp-hidden{display:none!important}.gps-510898589761799374 .mobile\:gp-hidden{display:none}}.gps-510898589761799374 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}.gps-510898589761799374 .\[\&_p\]\:gp-inline p{display:inline}.gps-510898589761799374 .\[\&_p\]\:after\:gp-whitespace-pre-wrap p:after{content:var(--tw-content);white-space:pre-wrap}.gps-510898589761799374 .\[\&_p\]\:after\:gp-content-\[\'\\A\'\] p:after{--tw-content:"\A";content:var(--tw-content)}</style>
+
+      
+      
+            <section
+              class="gp-mx-auto gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+              style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:0px;--pl-tablet:0px;--pl-mobile:0px;--pr:0px;--pr-tablet:0px;--pr-mobile:0px"
+            >
+              
+    <div
+      id="g6SpBAVCS1"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--pt:var(--g-s-4xl);--pl:15px;--pb:var(--g-s-4xl);--pr:15px;--pt-tablet:var(--g-s-4xl);--pl-tablet:15px;--pb-tablet:var(--g-s-4xl);--pr-tablet:15px;--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#FFFFFF;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="g6SpBAVCS1 gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gJAOh_HB5v gp-relative gp-flex gp-flex-col"
+    >
+      
+      
+      
+    <div
+      parentTag="Col" id="gDoG-0cyKw"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:130px;--mb-mobile:300px;--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gDoG-0cyKw gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gqXg7BZ3B3 gp-relative gp-flex gp-flex-col"
+    >
+      <div
+    
+    role="presentation"
+    class="gp-group/image gmmjf5qVTZ"
+    style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:0px;--ta:center"
+    >
+      <div
+        class="pointer-events-auto h-full"
+        
+        class="gp-h-full gp-w-full"
+        style="--shadow:none;border-radius:inherit;--ta:center"
+      >
+        
+  {%- liquid
+    assign isFetchPriorityHigh = 'false'
+    
+  -%}
+  <picture style="border-radius: inherit" class="">
+    {%- if isFetchPriorityHigh == 'true' -%}
+      
+        
+        <img
+          
+          class="!gp-inline gp-h-full gp-max-w-full gp-flex"
+          src="{{ "gempages_508783848931197844-ddfa4428-71d1-41d0-95b6-23f566f0ca74.png" | file_url }}"
+          alt="Alt Image"
+          fetchpriority="high"
+          style="--aspect:1792/1024;--aspect-tablet:undefined/undefined;--aspect-mobile:undefined/undefined;--objf:fill;--w-tablet:100%;--w-mobile:100%;--h:auto;--h-tablet:auto;--h-mobile:auto;--bs:solid;--bw:0px 0px 0px 0px;--bc:transparent;--radius:var(--g-radius-none);border-radius:inherit"
+        />
+    {%- else -%}
+      
+      
+      <img
+        
+        class="!gp-inline gp-h-full gp-max-w-full gp-flex gp_lazyload"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdj+Pr1638ACaED3/nOThIAAAAASUVORK5CYII="
+        data-src="{{ "gempages_508783848931197844-ddfa4428-71d1-41d0-95b6-23f566f0ca74.png" | file_url }}"
+        alt="Alt Image"
+        style="--aspect:1792/1024;--aspect-tablet:undefined/undefined;--aspect-mobile:undefined/undefined;--objf:fill;--w-tablet:100%;--w-mobile:100%;--h:auto;--h-tablet:auto;--h-mobile:auto;--bs:solid;--bw:0px 0px 0px 0px;--bc:transparent;--radius:var(--g-radius-none);border-radius:inherit"
+      />
+    {%- endif -%}
+  </picture>
+      </div>
+  </div>
+      
+      
+    <div
+      parentTag="Col" id="glv_SvbPNT"
+        style="--b:solid;--bc:#DDDDDD;--bw:1px 1px 1px 1px;--bottom:-100px;--bottom-mobile:-259px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--left:0px;--op:100%;--pos:absolute;--right:0px;--bblr:32px;--bbrr:32px;--btlr:32px;--btrr:32px;--pt:var(--g-s-2xl);--pl:var(--g-s-2xl);--pb:var(--g-s-2xl);--pr:var(--g-s-2xl);--top:undefinedpx;--z:9999;--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:769px;--w-tablet:769px;--w-mobile:317px;--bgc:#ffffff;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="glv_SvbPNT gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gs7D5yEvdm gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gSya_joh44 "
+        style="--ta:left;--animation:[object Object];--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l)"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+         
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--ff:var(--g-font-Futura-Book-font, 'Futura Book font'), var(--g-font-heading, heading);--weight:400;--size:46px;--size-tablet:46px;--size-mobile:41px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:var(--g-c-text-2, text-2);word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-510898589761799374.ggSya_joh44_text_html" | t }}</h2>
+      </div>
+    </div>
+    <div
+      parentTag="Col"
+        class="ggL_-hkKAp "
+        style="--ta:center;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-xl)"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <div
+         
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Futura-Heavy-font, 'Futura Heavy font'), var(--g-font-body, body);--weight:400;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:180%;--lh-tablet:180%;--lh-mobile:180%;--fs:italic;--c:#6EFFDC;word-break:break-word;overflow:hidden"
+        >{{ "sections.gp-global-section-510898589761799374.gggL_-hkKAp_text_html" | t }}</div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    
+    </div>
+    </div>
+  
+    
+    <div
+      parentTag="Col"
+        class="gjfgSoaoBa "
+        style="--ta:center;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-2xl)"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <h2
+         
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--fs:normal;--ff:var(--g-font-Futura-Book-font, 'Futura Book font'), var(--g-font-heading, heading);--weight:400;--ls:normal;--size:40px;--size-tablet:40px;--size-mobile:35px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#000000;word-break:break-word;overflow:hidden"
+        >{{ "sections.gp-global-section-510898589761799374.ggjfgSoaoBa_text_html" | t }}</h2>
+      </div>
+    </div>
+      
+      
+    <div
+      parentTag="Col" id="ghM3GIDghI"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--pl:0px;--pr:0px;--pl-mobile:0px;--pr-mobile:0px;--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="ghM3GIDghI gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="g2wKLMAvpD gp-relative gp-flex gp-flex-col"
+    >
+      
+      
+      
+    <div
+      parentTag="Col" id="g7TUOdr54v"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--pos:static;--right:%;--radius:var(--g-radius-none);--mb:var(--g-s-2xl);--top:undefined;--cg:62px;--pc:start;--gtc:minmax(0, 12fr);--w:2000px;--w-tablet:100%;--w-mobile:100%;--bgc:rgba(181, 181, 181, 0);--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="g7TUOdr54v gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:center;--o:0"
+      class="gLdyQMOZ7H gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gtv8O93vLN "
+        style="--ta:left;--animation:[object Object];--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+         
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Futura-Book-font, 'Futura Book font'), var(--g-font-body, body);--weight:400;--size:17px;--size-tablet:16px;--size-mobile:14px;--lh:180%;--lh-tablet:180%;--lh-mobile:180%;--c:var(--g-c-text-1, text-1);word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        ><p><strong>Nuestra Misión</strong></p><p>Nuestra misión es clara: proporcionar a nuestros clientes pestañas postizas de la más alta calidad, diseñadas para inspirar confianza y destacar la belleza natural. Atendemos a una clientela diversa, que incluye empresas mayoristas, profesionales de la estética y emprendedores que buscan dejar su huella en el mundo de la belleza.</p><p>&nbsp;</p><p><strong>Nuestro Compromiso con la Calidad y el Valor</strong></p><p>&nbsp;</p><p>Creemos que la calidad no debería ser un lujo. Por eso, nos hemos asociado con las mayores fábricas del sector para ofrecerte productos excepcionales a precios que desafían la competencia en toda Europa. Nuestro catálogo está repleto de opciones, permitiéndote encontrar el estilo perfecto para cada ocasión.</p><p>&nbsp;</p><p><strong>Nuestros Valores</strong></p><p><span style="color:#999999;"><strong>Confianza y Seguridad:</strong> Nos esforzamos por ser una empresa en la que puedas confiar, ofreciendo productos seguros y servicios fiables.</span></p><p>&nbsp;</p><p><span style="color:#999999;"><strong>Profesionalismo con un Toque Personal:</strong> Aunque somos jóvenes, abordamos nuestro trabajo con seriedad y profesionalismo, sin perder ese toque personal que nos caracteriza.</span></p><p>&nbsp;</p><p><span style="color:#999999;"><strong>Pasión por la Excelencia:</strong> Las pestañas postizas no son solo nuestro negocio, son nuestra obsesión. Esta pasión nos impulsa a buscar constantemente la perfección.</span></p><p>&nbsp;</p><p><span style="background-color:rgb(255,255,255);color:#000000;font-size:16px;"><strong>Envíos rápidos y eficientes</strong></span></p><p>&nbsp;</p><p>&nbsp;Entendemos que el tiempo es oro. Por ell<span style="color:#999999;">o, nos comprometemos a entregar tus pedidos con rapidez y eficiencia, garantizando que siempre recibirás tus productos a tiempo. Pura Vida es más que una marca; es una promesa de belleza, calidad y cuidado. Nos dedicamos a superar tus expectativas, ofreciéndote no solo pestañas, sino una experiencia completa que te hará volver una y otra vez.</span><br><br><br>&nbsp;</p></div>
+      </div>
+    </div>
+      <style id="custom-css-gtv8O93vLN">
+        .gtv8O93vLN {
+
+}
+.gtv8O93vLN p {
+
+}
+      </style>
+    
+    <div
+      parentTag="Col"
+        class="g97_fTghKe "
+        style="--ta:left;--animation:[object Object];--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+         
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Futura-Book-font, 'Futura Book font'), var(--g-font-body, body);--size:29px;--size-tablet:16px;--size-mobile:14px;--lh:180%;--lh-tablet:180%;--lh-mobile:180%;--weight:bold;--c:#000000;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-510898589761799374.gg97_fTghKe_text_html" | t }}</div>
+      </div>
+    </div>
+      <style id="custom-css-g97_fTghKe">
+        .g97_fTghKe {
+
+}
+.g97_fTghKe p {
+
+}
+      </style>
+    
+    </div>
+    </div>
+  
+    
+    </div>
+    </div>
+  
+    
+    </div>
+    </div>
+  
+            </section>
+          
+    
+
+
+{% schema %}
+  {
+    "presets": [{ "name": "SOBRE NOSOTROS 2" }],
+    "name": "SOBRE NOSOTROS 2",
+    "tag": "section",
+    "class": "gps-510898589761799374 gps gpsil",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/807a28-6b/apps/bold/app/shopify/edit?pageType=THEME_SECTION&editorId=510898589761799374)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"off_lazy_script"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {"es":{"ggSya_joh44_text_html":"Sobre nosotros","gggL_-hkKAp_text_html":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(77,77,77);font-size:16px;\">Bienvenidos a </span><strong>Pura Vida</strong><span style=\"background-color:rgb(255,255,255);color:rgb(77,77,77);font-size:16px;\">, el epicentro de la innovación en pestañas postizas. Somos una empresa española, fundada por un equipo de jóvenes profesionales que comparten una pasión común: realzar la belleza de cada persona con productos de calidad superior.</span></p>","ggjfgSoaoBa_text_html":"De <span style=\"color:#6EFFDC;\">profesionales </span>para <span style=\"color:#6EFFDC;\">profesionales&nbsp;</span>","gg97_fTghKe_text_html":"<p><span style=\"color:#999999;\">Pura Vida es más que una marca; es una promesa de belleza, calidad y cuidado. Nos dedicamos a superar tus expectativas, ofreciéndote no solo pestañas, sino una experiencia completa que te hará volver una y otra vez.</span></p>"}}
+  }
+{% endschema %}

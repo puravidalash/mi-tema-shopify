@@ -1,0 +1,2045 @@
+
+{% render 'gp-head', 'isThemeSection: true' %}
+<style {% if section.settings.section_preload == "false" %} class="gps-link gps-style" type="text/disabled-css" {% endif %}>.gps-509365895684949095.gps.gpsil [style*="--ai:"]{align-items:var(--ai)}.gps-509365895684949095.gps.gpsil [style*="--aspect:"]{aspect-ratio:var(--aspect)}.gps-509365895684949095.gps.gpsil [style*="--bg:"]{background:var(--bg)}.gps-509365895684949095.gps.gpsil [style*="--bga:"]{background-attachment:var(--bga)}.gps-509365895684949095.gps.gpsil [style*="--bgc:"]{background-color:var(--bgc)}.gps-509365895684949095.gps.gpsil [style*="--bgi:"]{background-image:var(--bgi)}.gps-509365895684949095.gps.gpsil [style*="--bgp:"]{background-position:var(--bgp)}.gps-509365895684949095.gps.gpsil [style*="--bgr:"]{background-repeat:var(--bgr)}.gps-509365895684949095.gps.gpsil [style*="--bgs:"]{background-size:var(--bgs)}.gps-509365895684949095.gps.gpsil [style*="--b:"]{border:var(--b)}.gps-509365895684949095.gps.gpsil [style*="--bc:"]{border-color:var(--bc)}.gps-509365895684949095.gps.gpsil [style*="--radius:"]{border-radius:var(--radius)}.gps-509365895684949095.gps.gpsil [style*="--bs:"]{border-style:var(--bs)}.gps-509365895684949095.gps.gpsil [style*="--bw:"]{border-width:var(--bw)}.gps-509365895684949095.gps.gpsil [style*="--shadow:"]{box-shadow:var(--shadow)}.gps-509365895684949095.gps.gpsil [style*="--c:"]{color:var(--c)}.gps-509365895684949095.gps.gpsil [style*="--cg:"]{-moz-column-gap:var(--cg);column-gap:var(--cg)}.gps-509365895684949095.gps.gpsil [style*="--ff:"]{font-family:var(--ff)}.gps-509365895684949095.gps.gpsil [style*="--size:"]{font-size:var(--size)}.gps-509365895684949095.gps.gpsil [style*="--weight:"]{font-weight:var(--weight)}.gps-509365895684949095.gps.gpsil [style*="--fs:"]{font-style:var(--fs)}.gps-509365895684949095.gps.gpsil [style*="--gg:"]{grid-gap:var(--gg)}.gps-509365895684949095.gps.gpsil [style*="--gtc:"]{grid-template-columns:var(--gtc)}.gps-509365895684949095.gps.gpsil [style*="--h:"]{height:var(--h)}.gps-509365895684949095.gps.gpsil [style*="--jc:"]{justify-content:var(--jc)}.gps-509365895684949095.gps.gpsil [style*="--ls:"]{letter-spacing:var(--ls)}.gps-509365895684949095.gps.gpsil [style*="--tdt:"]{text-decoration-thickness:var(--tdt)}.gps-509365895684949095.gps.gpsil [style*="--tdc:"]{text-decoration-color:var(--tdc)}.gps-509365895684949095.gps.gpsil [style*="--m:"]{margin:var(--m)}.gps-509365895684949095.gps.gpsil [style*="--mb:"]{margin-bottom:var(--mb)}.gps-509365895684949095.gps.gpsil [style*="--mr:"]{margin-right:var(--mr)}.gps-509365895684949095.gps.gpsil [style*="--objf:"]{-o-object-fit:var(--objf);object-fit:var(--objf)}.gps-509365895684949095.gps.gpsil [style*="--op:"]{opacity:var(--op)}.gps-509365895684949095.gps.gpsil [style*="--o:"]{order:var(--o)}.gps-509365895684949095.gps.gpsil [style*="--pc:"]{place-content:var(--pc)}.gps-509365895684949095.gps.gpsil [style*="--p:"]{padding:var(--p)}.gps-509365895684949095.gps.gpsil [style*="--pb:"]{padding-bottom:var(--pb)}.gps-509365895684949095.gps.gpsil [style*="--pl:"]{padding-left:var(--pl)}.gps-509365895684949095.gps.gpsil [style*="--pr:"]{padding-right:var(--pr)}.gps-509365895684949095.gps.gpsil [style*="--pt:"]{padding-top:var(--pt)}.gps-509365895684949095.gps.gpsil [style*="--pos:"]{position:var(--pos)}.gps-509365895684949095.gps.gpsil [style*="--right:"]{right:var(--right)}.gps-509365895684949095.gps.gpsil [style*="--ta:"]{text-align:var(--ta)}.gps-509365895684949095.gps.gpsil [style*="--tt:"]{text-transform:var(--tt)}.gps-509365895684949095.gps.gpsil [style*="--top:"]{top:var(--top)}.gps-509365895684949095.gps.gpsil [style*="--t:"]{transform:var(--t)}.gps-509365895684949095.gps.gpsil [style*="--w:"]{width:var(--w)}.gps-509365895684949095.gps.gpsil [style*="--z:"]{z-index:var(--z)}.gps-509365895684949095.gps.gpsil [style*="--line-clamp:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp);display:-webkit-box;overflow:hidden}@media only screen and (max-width:1024px){.gps-509365895684949095.gps.gpsil [style*="--aspect-tablet:"]{aspect-ratio:var(--aspect-tablet)}.gps-509365895684949095.gps.gpsil [style*="--cg-tablet:"]{-moz-column-gap:var(--cg-tablet);column-gap:var(--cg-tablet)}.gps-509365895684949095.gps.gpsil [style*="--size-tablet:"]{font-size:var(--size-tablet)}.gps-509365895684949095.gps.gpsil [style*="--gtc-tablet:"]{grid-template-columns:var(--gtc-tablet)}.gps-509365895684949095.gps.gpsil [style*="--h-tablet:"]{height:var(--h-tablet)}.gps-509365895684949095.gps.gpsil [style*="--jc-tablet:"]{justify-content:var(--jc-tablet)}.gps-509365895684949095.gps.gpsil [style*="--o-tablet:"]{order:var(--o-tablet)}.gps-509365895684949095.gps.gpsil [style*="--pb-tablet:"]{padding-bottom:var(--pb-tablet)}.gps-509365895684949095.gps.gpsil [style*="--pl-tablet:"]{padding-left:var(--pl-tablet)}.gps-509365895684949095.gps.gpsil [style*="--pr-tablet:"]{padding-right:var(--pr-tablet)}.gps-509365895684949095.gps.gpsil [style*="--w-tablet:"]{width:var(--w-tablet)}.gps-509365895684949095.gps.gpsil [style*="--line-clamp-tablet:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-tablet);display:-webkit-box;overflow:hidden}}@media only screen and (max-width:767px){.gps-509365895684949095.gps.gpsil [style*="--aspect-mobile:"]{aspect-ratio:var(--aspect-mobile)}.gps-509365895684949095.gps.gpsil [style*="--cg-mobile:"]{-moz-column-gap:var(--cg-mobile);column-gap:var(--cg-mobile)}.gps-509365895684949095.gps.gpsil [style*="--size-mobile:"]{font-size:var(--size-mobile)}.gps-509365895684949095.gps.gpsil [style*="--gg-mobile:"]{grid-gap:var(--gg-mobile)}.gps-509365895684949095.gps.gpsil [style*="--gtc-mobile:"]{grid-template-columns:var(--gtc-mobile)}.gps-509365895684949095.gps.gpsil [style*="--h-mobile:"]{height:var(--h-mobile)}.gps-509365895684949095.gps.gpsil [style*="--jc-mobile:"]{justify-content:var(--jc-mobile)}.gps-509365895684949095.gps.gpsil [style*="--mb-mobile:"]{margin-bottom:var(--mb-mobile)}.gps-509365895684949095.gps.gpsil [style*="--o-mobile:"]{order:var(--o-mobile)}.gps-509365895684949095.gps.gpsil [style*="--pb-mobile:"]{padding-bottom:var(--pb-mobile)}.gps-509365895684949095.gps.gpsil [style*="--pl-mobile:"]{padding-left:var(--pl-mobile)}.gps-509365895684949095.gps.gpsil [style*="--pr-mobile:"]{padding-right:var(--pr-mobile)}.gps-509365895684949095.gps.gpsil [style*="--w-mobile:"]{width:var(--w-mobile)}.gps-509365895684949095.gps.gpsil [style*="--line-clamp-mobile:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-mobile);display:-webkit-box;overflow:hidden}}.gps-509365895684949095 .-gp-translate-x-1\/2,.gps-509365895684949095 .-gp-translate-y-1\/2{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1}.gps-509365895684949095 .gp-absolute{position:absolute}.gps-509365895684949095 .gp-relative{position:relative}.gps-509365895684949095 .gp-left-0{left:0}.gps-509365895684949095 .gp-left-1\/2{left:50%}.gps-509365895684949095 .gp-top-0{top:0}.gps-509365895684949095 .gp-top-1\/2{top:50%}.gps-509365895684949095 .gp-z-0{z-index:0}.gps-509365895684949095 .gp-z-\[90\]{z-index:90}.gps-509365895684949095 .\!gp-m-0{margin:0!important}.gps-509365895684949095 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-509365895684949095 .gp-mb-0{margin-bottom:0}.gps-509365895684949095 .gp-block{display:block}.gps-509365895684949095 .gp-flex{display:flex}.gps-509365895684949095 .gp-inline-flex{display:inline-flex}.gps-509365895684949095 .gp-grid{display:grid}.gps-509365895684949095 .\!gp-hidden{display:none!important}.gps-509365895684949095 .gp-hidden{display:none}.gps-509365895684949095 .gp-aspect-\[56\/32\]{aspect-ratio:56/32}.gps-509365895684949095 .gp-h-0{height:0}.gps-509365895684949095 .gp-h-full{height:100%}.gps-509365895684949095 .\!gp-w-full{width:100%!important}.gps-509365895684949095 .gp-w-14{width:56px}.gps-509365895684949095 .gp-w-5{width:20px}.gps-509365895684949095 .gp-w-full{width:100%}.gps-509365895684949095 .\!gp-max-w-full{max-width:100%!important}.gps-509365895684949095 .gp-max-w-full{max-width:100%}.gps-509365895684949095 .-gp-translate-x-1\/2{--tw-translate-x:-50%}.gps-509365895684949095 .-gp-translate-x-1\/2,.gps-509365895684949095 .-gp-translate-y-1\/2{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.gps-509365895684949095 .-gp-translate-y-1\/2{--tw-translate-y:-50%}.gps-509365895684949095 .gp-cursor-pointer{cursor:pointer}.gps-509365895684949095 .gp-flex-col{flex-direction:column}.gps-509365895684949095 .gp-flex-wrap{flex-wrap:wrap}.gps-509365895684949095 .gp-items-start{align-items:flex-start}.gps-509365895684949095 .gp-items-end{align-items:flex-end}.gps-509365895684949095 .gp-items-center{align-items:center}.gps-509365895684949095 .gp-justify-center{justify-content:center}.gps-509365895684949095 .gp-gap-3{gap:12px}.gps-509365895684949095 .gp-gap-y-0{row-gap:0}.gps-509365895684949095 .gp-overflow-hidden{overflow:hidden}.gps-509365895684949095 .\!gp-rounded-none{border-radius:0!important}.gps-509365895684949095 .gp-rounded{border-radius:4px}.gps-509365895684949095 .gp-bg-black\/80{background-color:rgba(0,0,0,.8)}.gps-509365895684949095 .gp-bg-g-bg-3{background-color:var(--g-c-bg-3)}.gps-509365895684949095 .gp-object-cover{-o-object-fit:cover;object-fit:cover}.gps-509365895684949095 .\!gp-pb-0{padding-bottom:0!important}.gps-509365895684949095 .gp-text-center{text-align:center}.gps-509365895684949095 .gp-text-g-bg-3{color:var(--g-c-bg-3)}.gps-509365895684949095 .gp-text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.gps-509365895684949095 .gp-line-through{text-decoration-line:line-through}.gps-509365895684949095 .gp-decoration-g-highlight{text-decoration-color:var(--g-c-highlight)}.gps-509365895684949095 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-509365895684949095 .gp-transition-opacity{transition-duration:.15s;transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-509365895684949095 .gp-duration-200{transition-duration:.2s}.gps-509365895684949095 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@media (hover:hover) and (pointer:fine){.gps-509365895684949095 .hover\:gp-bg-\[\#ef0800\]:hover{--tw-bg-opacity:1;background-color:rgb(239 8 0/var(--tw-bg-opacity))}}.gps-509365895684949095 .data-\[disabled\=true\]\:gp-hidden[data-disabled=true],.gps-509365895684949095 .data-\[hidden\=true\]\:gp-hidden[data-hidden=true]{display:none}.gps-509365895684949095 .gp-group[data-state=loading] .group-data-\[state\=loading\]\:gp-invisible{visibility:hidden}@media (max-width:1024px){.gps-509365895684949095 .tablet\:\!gp-hidden{display:none!important}.gps-509365895684949095 .tablet\:gp-hidden{display:none}}@media (max-width:767px){.gps-509365895684949095 .mobile\:\!gp-hidden{display:none!important}.gps-509365895684949095 .mobile\:gp-hidden{display:none}}.gps-509365895684949095 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}.gps-509365895684949095 .\[\&_p\]\:gp-inline p{display:inline}.gps-509365895684949095 .\[\&_p\]\:after\:gp-whitespace-pre-wrap p:after{content:var(--tw-content);white-space:pre-wrap}.gps-509365895684949095 .\[\&_p\]\:after\:gp-content-\[\'\\A\'\] p:after{--tw-content:"\A";content:var(--tw-content)}</style>
+
+       
+      
+            <section
+              class="gp-mx-auto gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+              style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:0px;--pl-tablet:0px;--pl-mobile:0px;--pr:0px;--pr-tablet:0px;--pr-mobile:0px"
+            >
+              
+    <div
+      enableLazyloadImage id="gB8BMZxwk4" data-id="gB8BMZxwk4"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--pt:var(--g-s-4xl);--pl:15px;--pb:var(--g-s-4xl);--pr:15px;--cg:var(--g-s-2xl);--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#FFFFFF;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gB8BMZxwk4 gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gs4WtAKzIr gp-relative gp-flex gp-flex-col"
+    >
+      
+       
+      
+    <div
+      enableLazyloadImage parentTag="Col" id="gRCgDX-Eak" data-id="gRCgDX-Eak"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-2xl);--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gRCgDX-Eak gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gwcsXRgEHn gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="g_MejYKP8Y">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="g_MejYKP8Y "
+        style="--tt:default;--ta:center;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l)"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <h2
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--c:#242424;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-heading, heading);--weight:700;--ls:normal;--size:33px;--size-tablet:33px;--size-mobile:29px;word-break:break-word;--radius:var(--g-radius-none);overflow:hidden"
+        >RECOMENDADOS</h2>
+      </div>
+    </div>
+    </gp-text>
+    
+    </div>
+    </div>
+   
+    
+       
+      
+    <div
+      enableLazyloadImage parentTag="Col" id="gLz3qRF8dA" data-id="gLz3qRF8dA"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:var(undefined);--cg:40px;--cg-tablet:var(--g-s-xl);--cg-mobile:24px;--pc:start;--gtc:minmax(0, 3fr) minmax(0, 3fr) minmax(0, 3fr) minmax(0, 3fr);--gtc-mobile:minmax(0, 6fr) minmax(0, 6fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gLz3qRF8dA gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gVBEVxuDS3 gp-relative gp-flex gp-flex-col"
+    >
+      
+    
+    {%- assign gpBkProduct = product -%}
+    
+        {%- liquid
+          if request.page_type == 'product'
+            if 'static' == 'static'
+              if '9158292898119' == 'latest'
+                paginate collections.all.products by 100000
+                  assign product = collections.all.products | sort: 'created_at' | reverse | first
+                endpaginate
+              else
+                assign product = all_products['pegamento-para-pestanas-postizas']
+                assign productId = '9158292898119' | times: 1
+                if product == empty or product == null
+                  paginate collections.all.products by 100000
+                    for item in collections.all.products
+                      if item.id == productId
+                        assign product = item
+                      endif
+                    endfor
+                  endpaginate
+                endif
+              endif
+            endif
+          else
+            if '9158292898119' == 'latest'
+              paginate collections.all.products by 100000
+                assign product = collections.all.products | sort: 'created_at'| reverse | first
+              endpaginate
+            else
+              assign product = all_products['pegamento-para-pestanas-postizas']
+              assign productId = '9158292898119' | times: 1
+              if product == empty or product == null
+                paginate collections.all.products by 100000
+                  for item in collections.all.products
+                    if item.id == productId
+                      assign product = item
+                    endif
+                  endfor
+                endpaginate
+              endif
+            endif
+          endif
+        -%}
+      
+
+    {%-if product != empty and product != null -%}
+      {%- assign initVariantId =  -%}
+      {%- assign product_form_id = 'product-form-' | append: "gXgqUKEnyt" -%}
+      {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%-if productSelectedVariant == empty or productSelectedVariant == null -%}
+        {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      {%-if variant == empty or variant == null -%}
+        {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      <gp-product data-uid="gXgqUKEnyt" data-id="gXgqUKEnyt"   gp-context='{"productId": {{ product.id }}, "isSyncProduct": "", "variantSelected": {{ variant | json | escape }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
+        gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1, "productUrl":{{ product.url | json | escape }}, "productHandle":{{ product.handle | json | escape }}, "collectionUrl": {{ collection.url | json | escape }}, "collectionHandle": {{ collection.handle | json | escape }}}'>
+        <product-form class="product-form">
+          {%- form 'product', product, id: product_form_id, class: 'form contents', data-type: 'add-to-cart-form', autocomplete: 'off'  -%}
+            <input type="hidden" name="id" value="{{ variant.id }}" />
+            <input type="hidden" name="quantity" value="{{ quantity }}" />
+            <button type="submit" onclick="return false;" style="display:none;"></button>
+            
+       
+      
+    <div
+      id="gXgqUKEnyt" data-id="gXgqUKEnyt-row"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb-mobile:var(--g-s-3xl);--cg:30px;--pc:start;--gtc:minmax(0, auto);--w:1400px;--w-tablet:100%;--w-mobile:100%"
+        class="gXgqUKEnyt gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gxai38VFAb gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign featured_image = product.featured_image %}
+  {%- if variant != null and variant.featured_image != null -%}
+  {% assign featured_image = variant.featured_image %}
+  {%- endif -%}
+    <gp-product-images-v2
+      gp-data='
+    {
+      "id":"g3g6O00p2d",
+      "pageContext": {"isTranslateWithLocale":true,"sectionName":"gp-global-section-509365895684949095"},
+      "setting":{"arrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n              <rect width=\"32\" height=\"32\" rx=\"16\" fill=\"white\"/>\n              <path d=\"M12.7434 20.8964C12.4176 21.2223 12.4176 21.7506 12.7434 22.0764C13.0693 22.4023 13.5976 22.4023 13.9234 22.0764L19.6227 16.3771C19.8311 16.1687 19.8311 15.8308 19.6227 15.6224L13.9234 9.9231C13.5976 9.59725 13.0693 9.59725 12.7434 9.9231C12.4176 10.2489 12.4176 10.7772 12.7434 11.1031L17.6401 15.9998L12.7434 20.8964Z\" fill=\"black\"/>\n              </svg>\n              ","borderActive":{"border":"solid","borderType":"none","borderWidth":"1px","color":"#000000","isCustom":"false","width":"1px 1px 1px 1px"},"clickOpenLightBox":{"desktop":false,"mobile":false,"tablet":false},"dragToScroll":true,"ftArrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM10.6828 8.13017C10.5266 7.95661 10.2734 7.95661 10.1172 8.13017C9.96095 8.30374 9.96095 8.58515 10.1172 8.75871L13.0343 12L10.1172 15.2413C9.96095 15.4149 9.96095 15.6963 10.1172 15.8698C10.2734 16.0434 10.5266 16.0434 10.6828 15.8698L13.8828 12.3143C14.0391 12.1407 14.0391 11.8593 13.8828 11.6857L10.6828 8.13017Z\" fill=\"currentColor\"/>\n    </svg>","ftArrowIconColor":"#000000","ftClickOpenLightBox":{"desktop":"product-link"},"ftDotActiveColor":{"desktop":"line-3","mobile":"line-3","tablet":"line-3"},"ftDotColor":{"desktop":"bg-1","mobile":"bg-1","tablet":"bg-1"},"ftDotGapToCarousel":{"desktop":16,"mobile":16,"tablet":16},"ftDotSize":{"desktop":12,"mobile":12,"tablet":12},"ftDotStyle":{"desktop":"none","mobile":"none","tablet":"none"},"ftNavigationPosition":{"desktop":"none","mobile":"none","tablet":"none"},"hoverEffect":"none","loop":{"desktop":false},"navigationPosition":{"desktop":"inside","mobile":"inside","tablet":"inside"},"otherImage":0,"pauseOnHover":true,"speed":1,"type":{"desktop":"images","mobile":"images","tablet":"images"},"typeDisplay":"all-images","zoom":150,"zoomType":"default","preDisplay":"1st-available-variant"},
+      "styles":{"align":{"desktop":"center","mobile":"center","tablet":"center"},"dotActiveColor":{"desktop":"line-3"},"dotColor":{"desktop":"bg-1"},"ftLayout":{"desktop":"contain"},"ftShape":{"desktop":{"shape":"custom","shapeLinked":false,"width":"100%","gap":"","height":"300px","shapeValue":"","customShapeValue":""},"mobile":{"shape":"original","shapeLinked":true,"width":"","customShapeValue":"","height":"200px","gap":""},"tablet":{"shape":"original","shapeLinked":true,"width":"","customShapeValue":"","height":"200px","gap":""}},"itemSpacing":{"desktop":"var(--g-s-s)","mobile":"var(--g-s-s)"},"layout":{"desktop":"cover"},"position":{"desktop":"only-feature","mobile":"only-feature","tablet":"only-feature"},"ratioLayout":{"desktop":[20,80],"mobile":[20,80],"tablet":[20,80]},"ratioLayoutRight":{"desktop":[80,20],"mobile":[80,20],"tablet":[80,20]},"shape":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeFor1Col":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeFor2Col":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"50%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeForBottom":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"20%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeForFtOnly":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"spacing":{"desktop":"var(--g-s-s)","mobile":"var(--g-s-s)"},"verticalLayout":{"desktop":false},"verticalLayoutRow":{"desktop":true}}, "productUrl":{{product.url | json | escape}}, "product":{{product | json | escape}}, "collectionUrl": {{ collection.url | json | escape }}, "collection": {{ collection | json | escape}}
+    }
+  '
+      section-id="{{section.id}}"
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l)"
+      data-id="g3g6O00p2d"
+      class="g3g6O00p2d gp-overflow-hidden"
+    >
+      <div
+        class="{%- if product.media.size > 1 -%} gp-grid gp-w-full !gp-m-0 gp-relative {%- else -%} gp-w-full !gp-m-0 gp-relative {%- endif -%}"
+        {%- if product.media.size > 1 -%}
+        style="--gtc:minmax(0, 12fr);--gtc-tablet:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--gg:var(--g-s-s);--gg-mobile:var(--g-s-s)"
+        {%- else -%}
+        style="--gtc:minmax(0, 12fr);--gg:var(--g-s-s);--gg-mobile:var(--g-s-s)"
+        {%- endif -%}
+      >
+        
+    {% capture featureImageOnlyOne %}
+      
+        {% assign featureMedia = variant.featured_media %}
+        {% unless featureMedia %}
+        {% assign featureMedia = product.featured_media %}
+        {% endunless %}
+        {% if product.media.size > 1 %}
+          
+          {% assign featureMedia = variant.featured_media %}
+          {% unless featureMedia %}
+          {% assign featureMedia = product.featured_media %}
+          {% endunless %}
+        
+        {% endif %}
+        {% assign largestRatio = 0 %}
+        {% assign height = featureMedia.height | times: 1.0 %}
+        {% assign width = featureMedia.width | times: 1.0 %}
+        {% assign ratio = height | divided_by: width %}
+        {% if ratio > largestRatio %}
+          {% assign largestRatio = ratio %}
+        {% endif %}
+        {% assign productImageWidth = 0 %}
+        {% case featureMedia.media_type %}
+          {% when 'image' %}
+            {% assign productImageWidth = featureMedia.width %}
+          {% else %}
+            {% assign productImageWidth = featureMedia.preview_image.width %}
+        {% endcase %}
+        {% if featureMedia == null %}
+        {% assign productImageWidth = 1600 %}
+        {% endif %}
+        <div 
+          class='gp-feature-image-carousel gp-feature-image-only' 
+          style="--o:0;--o-tablet:0;--o-mobile:0;--d:flex;--d-mobile:flex;--d-tablet:flex;--jc:center;--jc-tablet:center;--jc-mobile:center"
+        >
+          <div 
+            class="gp-relative"
+            style="--w:100%;--w-tablet:100%;--w-mobile:100%"
+          >
+            
+      
+    
+            <div 
+              type="gp-feature-image-only"
+              product-id="{{product.id}}"
+              product-media="{{product.media.size}}"
+              class="gp-image-item gp-ft-image-item gp-group gp-z-0 gp-flex !gp-max-w-full !gp-w-full gp-relative gp-items-start gp-justify-center gp-overflow-hidden gp-featured-image-wrapper"
+              style="--h:300px;--h-tablet:200px;--h-mobile:200px;width:{{productImageWidth}}px"
+            >
+              <div 
+                class="gp-w-full  {% if featureMedia == null or featureMedia.media_type == 'image' %} {{ 'gp-h-0' }} {% else %} {{ 'gp-h-full !gp-pb-0' }} {% endif %} gp-relative" 
+                style="--pb: 300px;--pb-tablet: 200px;--pb-mobile: 200px; {% if featureMedia.media_type == 'video' or featureMedia.media_type == 'external_video' %} {{ 'display: flex; align-items: center; justify-content: center' }} {% endif %}"
+              >
+                
+    {% case featureMedia.media_type %}
+      {% when 'image' %}
+        
+      
+    {% assign src = featureMedia.src %}
+    
+    
+  <img
+      id="{%- if featureMedia != null -%}
+              {{featureMedia.id}}
+            {%- endif -%}"
+      
+      draggable="false"
+      class="gp-w-full gp-h-full gp-absolute gp-top-0 gp-left-0 featured-image-only gp-cursor-pointer !gp-rounded-none gp-w-full gp-transition-opacity {{shouldHidden}} gp_lazyload"
+      data-src="{{src | image_url}}" data-srcset="{%- if src != null -%}
+              {{src | img_url: '480x480'}} 480w, {{src | img_url: '768x768'}} 768w,{{src | img_url: '1024x1024'}} 1024w,{{src | img_url: '1440x1440'}} 1440w
+            {%- else -%}
+              {{ 'https://cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_large.gif' }}
+            {%- endif -%}" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgaGVpZ2h0PSJ7e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9Imcte3tmZWF0dXJlTWVkaWEud2lkdGh9fS17e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgaGVpZ2h0PSJ7e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgaGVpZ2h0PSJ7e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSIgZmlsbD0idXJsKCNnLXt7ZmVhdHVyZU1lZGlhLndpZHRofX0te3tmZWF0dXJlTWVkaWEuaGVpZ2h0fX0pIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii17e2ZlYXR1cmVNZWRpYS53aWR0aH19IiB0bz0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiICAvPgogIDwvc3ZnPg==" width="{{featureMedia.width}}" height="{{featureMedia.height}}" alt="{{featureMedia.alt}}" base-src="{{src | image_url}}"
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="--aspect:{{featureMedia.width}}/{{featureMedia.height}};--aspect-tablet:{{featureMedia.width}}/{{featureMedia.height}};--aspect-mobile:{{featureMedia.width}}/{{featureMedia.height}};--objf:contain"
+    />
+  
+      
+      
+    
+      {% when 'external_video' %}
+        {% assign mediaSourceVideo = featureMedia | external_video_url %}
+        
+    <iframe
+      width="100%" height="100%"
+      class="feature-video gp-w-full gp-h-full gp-relative"
+      src="{{mediaSourceVideo}}"
+      controls="true"
+      allowfullscreen="true"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      frameborder="0"
+      autoplay="false"
+      alt="{{featureMedia.alt}}"
+      style="--aspect-tablet:;--aspect-mobile:"
+    >
+    </iframe>
+  
+      {% when 'video' %}
+        {% assign mediaSourceVideo = featureMedia.sources.last.url %}
+        
+  <gp-lite-html5-embed>
+    
+    <video
+      id="gp-video-undefined"
+      class=" gp-w-full lazy"
+      style="width:100%;max-height:100%"
+      controls
+      
+      
+      
+      title="{{featureMedia.alt}}"
+      preload="none"
+      data-src="{{mediaSourceVideo}}"
+      src=""
+      poster=""
+      playsinline
+    >
+    
+  </video>
+    <div
+          style="width:100%;max-height:100%"
+           class="gp-absolute gp-top-0 gp-left-0  gp-w-full gp-thumbnail-video gp-hidden"
+        >
+          <img
+            id="video-thumbnail"
+            src=""
+            class="gp-w-full gp-h-full gp-object-cover"
+            alt="Video Thumbnail"
+          ></img>
+          <button
+            type="button"
+            class="gp-absolute gp-left-1/2 gp-top-1/2 gp-flex gp-aspect-[56/32] gp-w-14 -gp-translate-x-1/2 -gp-translate-y-1/2 gp-items-center gp-justify-center gp-rounded gp-bg-black/80 gp-transition-colors hover:gp-bg-[#ef0800]"
+            aria-label="Play"
+          >
+            <svg class="gp-w-5 gp-text-white" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M5 5.274c0-1.707 1.826-2.792 3.325-1.977l12.362 6.726c1.566.853 1.566 3.101 0 3.953L8.325 20.702C6.826 21.518 5 20.432 5 18.726V5.274Z"
+              />
+            </svg>
+          </button>
+        </div>
+        </gp-lite-html5-embed>
+        <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-lite-html5-embed.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+        if(lazyLoadInstance){lazyLoadInstance.update()}else{var lazyLoadInstance = new LazyLoad()}
+    </script>
+  
+      {% when 'model' %}
+        
+    <model-viewer
+      class="gp-w-full gp-h-full model-viewer gp-z-[90]"
+      width="100%"
+      
+      
+      
+      
+      src="{% if featureMedia.sources.first.url contains '.glb' %}{{ featureMedia.sources.first.url }}{% else %}{{featureMedia.sources.last.url}}{% endif %}"
+      alt="{{featureMedia.preview_image.alt}}"
+      camera-controls="true"
+      poster="{{featureMedia.preview_image.src | product_img_url: '1024x1024'}}"
+      data-js-focus-visible=""
+      data-shopify-feature="1.12"
+      ar-status="not-presenting"
+      style="--aspect:1/1;--aspect-tablet:1/1;--aspect-mobile:1/1">
+    </model-viewer>
+  
+      {% else %}
+        
+    
+  <img
+      
+      
+      draggable="false"
+      class="gp-w-full gp-h-full gp-absolute gp-top-0 gp-left-0 featured-image-only gp-cursor-pointer !gp-rounded-none gp_lazyload"
+      data-src data-srcset="https://cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_large.gif" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt="No Image"
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="--aspect:2237/1678;--aspect-tablet:2237/1678;--aspect-mobile:2237/1678;--objf:contain"
+    />
+  
+    {% endcase %}
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    {% endcapture %}
+    {% if product.media.size > 1 %}
+      
+      {{ featureImageOnlyOne }}
+    {% else %}
+      {{ featureImageOnlyOne }}
+    {% endif %}
+  
+         
+      </div>
+    </gp-product-images-v2>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-images-v2.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+       
+      
+    <div
+      enableLazyloadImage parentTag="Col" id="ghOM7QyGJ6" data-id="ghOM7QyGJ6"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--pos:absolute;--right:8px;--radius:var(--g-radius-none);--mb:var(undefined);--pt:4px;--pl:12px;--pb:4px;--pr:12px;--top:8px;--z:2;--cg:var(--g-s-2xl);--pc:start;--gtc:minmax(0, 12fr);--w:auto;--w-tablet:auto;--w-mobile:auto;--bgc:#242424;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="ghOM7QyGJ6 gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="guSC3LQ6QZ gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="ggtLFT4vM6">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="ggtLFT4vM6 "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(undefined)"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text-g-bg-3 gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#FFFFFF;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-body, body);--weight:700;--ls:normal;--size:13px;--size-tablet:13px;--size-mobile:12px;word-break:break-word;--radius:var(--g-radius-none);overflow:hidden"
+        ><p>New</p></div>
+      </div>
+    </div>
+    </gp-text>
+    
+    </div>
+    </div>
+   
+    <div gp-el-wrapper style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-xs)" class="ghLse1wBj2 ">
+      
+    {%- unless product -%}
+      <p>{{ "gempages.ProductTitle.product_not_found" | t }}</p>
+    {%- else -%}
+      
+        <a href="{{ product.url }}" title="{{ product.title }}" class="gp-product-title-link-wrapper">
+        
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="ghLse1wBj2">
+    <div
+      
+        class="ghLse1wBj2 "
+        style="--tt:default"
+      >
+      <div  >
+        <h2
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A']"
+          style="--w:100%;--ta:center;--line-clamp:2;--line-clamp-tablet:2;--line-clamp-mobile:0;--c:#242424;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word;overflow:hidden"
+        >{{ product.title }}</h2>
+      </div>
+    </div>
+    </gp-text>
+    
+        </a>
+      
+    {%- endunless -%}
+  
+      </div>
+       
+      
+    <div
+      enableLazyloadImage parentTag="Col" id="gTvJAIFt3i" data-id="gTvJAIFt3i"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:var(undefined);--cg:var(--g-s-s);--pc:center;--gtc:minmax(0, auto) minmax(0, auto);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gTvJAIFt3i gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:center;--o:0"
+      class="gV23K73Pu7 gp-relative gp-flex gp-flex-col"
+    >
+      
+      <gp-product-price
+        data-id="gZcJPggQ9p"
+        class="gZcJPggQ9p gp-product-price group-data-[state=loading]:gp-invisible data-[hidden=true]:gp-hidden"
+        gp-data='{"priceType":"regular","uid":"gZcJPggQ9p","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
+        
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mr:var(undefined)"
+        data-hidden="false"
+      >
+        
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="">
+    <div
+      id="p-price-gZcJPggQ9p"
+        class=" "
+        
+      >
+      <div  >
+        <div
+          type="regular"
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-price gp-money gp-decoration-g-highlight"
+          style="--w:100%;--tdc:highlight;--tdt:1;--ta:left;--c:#242424;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-body, body);--weight:700;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word;overflow:hidden"
+        >
+     {% if variant.price %} 
+       {{ variant.price | money}}
+     {% endif %}
+   </div>
+      </div>
+    </div>
+    </gp-text>
+    
+      </gp-product-price>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-price.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div><div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:center;--o:0"
+      class="gacRPnpWv0 gp-relative gp-flex gp-flex-col"
+    >
+      
+      <gp-product-price
+        data-id="gWqlBGzkyu"
+        class="gWqlBGzkyu gp-product-price group-data-[state=loading]:gp-invisible data-[hidden=true]:gp-hidden"
+        gp-data='{"priceType":"compare","uid":"gWqlBGzkyu","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
+        
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+        data-hidden="{% if variant.compare_at_price > variant.price and variant.compare_at_price >= 0 %}false{% else %}true{% endif %}"
+      >
+        
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="">
+    <div
+      id="p-price-gWqlBGzkyu"
+        class=" "
+        
+      >
+      <div  >
+        <div
+          type="compare"
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-price gp-product-compare-price gp-line-through"
+          style="--w:100%;--tdc:#B4B4B4;--tdt:1;--ta:left;--c:#B4B4B4;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word;overflow:hidden"
+        >
+      {% if variant.compare_at_price  %} 
+        {{ variant.compare_at_price | money}}
+      {% else %}
+        
+      {% endif %}
+    </div>
+      </div>
+    </div>
+    </gp-text>
+    
+      </gp-product-price>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-price.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+    </div>
+   
+    
+    </div>
+    </div>
+   
+    
+          {%- endform -%}
+        </product-form>
+      </gp-product>
+      {%- assign product = gpBkProduct -%}
+    {% else %}
+      <div class="gp-text-center">{{ "gempages.Product.product_not_found" | t }}</div>
+    {%- endif -%}
+     <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product.v2.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div><div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gXztqMvH2- gp-relative gp-flex gp-flex-col"
+    >
+      
+    
+    {%- assign gpBkProduct = product -%}
+    
+        {%- liquid
+          if request.page_type == 'product'
+            if 'static' == 'static'
+              if '9157357863239' == 'latest'
+                paginate collections.all.products by 100000
+                  assign product = collections.all.products | sort: 'created_at' | reverse | first
+                endpaginate
+              else
+                assign product = all_products['shampoo-pestanas']
+                assign productId = '9157357863239' | times: 1
+                if product == empty or product == null
+                  paginate collections.all.products by 100000
+                    for item in collections.all.products
+                      if item.id == productId
+                        assign product = item
+                      endif
+                    endfor
+                  endpaginate
+                endif
+              endif
+            endif
+          else
+            if '9157357863239' == 'latest'
+              paginate collections.all.products by 100000
+                assign product = collections.all.products | sort: 'created_at'| reverse | first
+              endpaginate
+            else
+              assign product = all_products['shampoo-pestanas']
+              assign productId = '9157357863239' | times: 1
+              if product == empty or product == null
+                paginate collections.all.products by 100000
+                  for item in collections.all.products
+                    if item.id == productId
+                      assign product = item
+                    endif
+                  endfor
+                endpaginate
+              endif
+            endif
+          endif
+        -%}
+      
+
+    {%-if product != empty and product != null -%}
+      {%- assign initVariantId =  -%}
+      {%- assign product_form_id = 'product-form-' | append: "gRdDB7bIWS" -%}
+      {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%-if productSelectedVariant == empty or productSelectedVariant == null -%}
+        {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      {%-if variant == empty or variant == null -%}
+        {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      <gp-product data-uid="gRdDB7bIWS" data-id="gRdDB7bIWS"   gp-context='{"productId": {{ product.id }}, "isSyncProduct": "", "variantSelected": {{ variant | json | escape }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
+        gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1, "productUrl":{{ product.url | json | escape }}, "productHandle":{{ product.handle | json | escape }}, "collectionUrl": {{ collection.url | json | escape }}, "collectionHandle": {{ collection.handle | json | escape }}}'>
+        <product-form class="product-form">
+          {%- form 'product', product, id: product_form_id, class: 'form contents', data-type: 'add-to-cart-form', autocomplete: 'off'  -%}
+            <input type="hidden" name="id" value="{{ variant.id }}" />
+            <input type="hidden" name="quantity" value="{{ quantity }}" />
+            <button type="submit" onclick="return false;" style="display:none;"></button>
+            
+       
+      
+    <div
+      id="gRdDB7bIWS" data-id="gRdDB7bIWS-row"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb-mobile:var(--g-s-3xl);--cg:30px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%"
+        class="gRdDB7bIWS gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="goCVHjPEHq gp-relative gp-flex gp-flex-col"
+    >
+      <div gp-el-wrapper style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pos:absolute;--right:8px;--radius:var(--g-radius-none);--mb:var(--g-s-l);--top:8px;--z:1" class="gXCW03y9_e ">
+      
+  {% liquid
+    assign price = variant.price | times: 1.0
+    assign salePrice = variant.compare_at_price | times: 1.0
+    assign priceSave = salePrice | minus: price
+    assign prefixVal = 
+    assign suffixVal = 
+    if salePrice == null or price == null
+      assign pricePercentage = prefixVal | append: ' 0% ' | append: suffixVal
+    else
+         assign salePercent = priceSave | divided_by: salePrice | times: 100  | round
+                assign pricePercentage = prefixVal | append: ' ' | append: salePercent | append: '% ' | append: suffixVal
+              
+    endif
+  %}
+
+  <gp-product-tag
+  data-id="gXCW03y9_e"
+    data-disabled="{%- if priceSave > 0 -%} false {%- else -%} true {%- endif -%}"
+    gp-data='{"setting":{"customContent":{"prefix":"","suffix":"","unit":"percentage"}}, "id": "gXCW03y9_e", "locale": "{{shop.locale}}", "currency": "{{shop.currency}}", "moneyFormat": "{{ shop.money_format | replace: '"', '\"' | escape }}"}'
+    class="gp-block data-[disabled=true]:gp-hidden "
+    style="--ta:left"
+    price-save="{{priceSave}}"
+    data-prefix="{{}}"
+    data-suffix="{{}}"
+  >
+     <div class="gp-inline-flex gp-flex-wrap gp-items-end gp-gap-3" >
+       <div
+         class="gp-flex gp-items-center gp-w-full gp-h-full gp-bg-g-bg-3"
+         style="--bs:none;--bw:0px;--bc:transparent;--c:#EA3335;--radius:var(--g-radius-none)"
+       >
+         
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="">
+    <div
+      id="p-tag-gXCW03y9_e"
+        class=" "
+        
+      >
+      <div  >
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A']"
+          style="--w:100%;--ta:left;--c:#EA3335;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-heading, heading);--weight:700;--ls:normal;--size:13px;--size-tablet:13px;--size-mobile:12px;word-break:break-word;overflow:hidden"
+        >{{pricePercentage}}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+       </div>
+     </div>
+
+ </gp-product-tag>
+ <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-tag.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+   
+      </div>
+  {% assign featured_image = product.featured_image %}
+  {%- if variant != null and variant.featured_image != null -%}
+  {% assign featured_image = variant.featured_image %}
+  {%- endif -%}
+    <gp-product-images-v2
+      gp-data='
+    {
+      "id":"gvt2jWTvHq",
+      "pageContext": {"isTranslateWithLocale":true,"sectionName":"gp-global-section-509365895684949095"},
+      "setting":{"arrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n              <rect width=\"32\" height=\"32\" rx=\"16\" fill=\"white\"/>\n              <path d=\"M12.7434 20.8964C12.4176 21.2223 12.4176 21.7506 12.7434 22.0764C13.0693 22.4023 13.5976 22.4023 13.9234 22.0764L19.6227 16.3771C19.8311 16.1687 19.8311 15.8308 19.6227 15.6224L13.9234 9.9231C13.5976 9.59725 13.0693 9.59725 12.7434 9.9231C12.4176 10.2489 12.4176 10.7772 12.7434 11.1031L17.6401 15.9998L12.7434 20.8964Z\" fill=\"black\"/>\n              </svg>\n              ","borderActive":{"border":"solid","borderType":"none","borderWidth":"1px","color":"#000000","isCustom":"false","width":"1px 1px 1px 1px"},"clickOpenLightBox":{"desktop":false,"mobile":false,"tablet":false},"dragToScroll":true,"ftArrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM10.6828 8.13017C10.5266 7.95661 10.2734 7.95661 10.1172 8.13017C9.96095 8.30374 9.96095 8.58515 10.1172 8.75871L13.0343 12L10.1172 15.2413C9.96095 15.4149 9.96095 15.6963 10.1172 15.8698C10.2734 16.0434 10.5266 16.0434 10.6828 15.8698L13.8828 12.3143C14.0391 12.1407 14.0391 11.8593 13.8828 11.6857L10.6828 8.13017Z\" fill=\"currentColor\"/>\n    </svg>","ftArrowIconColor":"#000000","ftClickOpenLightBox":{"desktop":"product-link"},"ftDotActiveColor":{"desktop":"line-3","mobile":"line-3","tablet":"line-3"},"ftDotColor":{"desktop":"bg-1","mobile":"bg-1","tablet":"bg-1"},"ftDotGapToCarousel":{"desktop":16,"mobile":16,"tablet":16},"ftDotSize":{"desktop":12,"mobile":12,"tablet":12},"ftDotStyle":{"desktop":"none","mobile":"none","tablet":"none"},"ftNavigationPosition":{"desktop":"none","mobile":"none","tablet":"none"},"hoverEffect":"none","loop":{"desktop":false},"navigationPosition":{"desktop":"inside","mobile":"inside","tablet":"inside"},"otherImage":0,"pauseOnHover":true,"speed":1,"type":{"desktop":"images","mobile":"images","tablet":"images"},"typeDisplay":"all-images","zoom":150,"zoomType":"default"},
+      "styles":{"align":{"desktop":"center","mobile":"center","tablet":"center"},"dotActiveColor":{"desktop":"line-3"},"dotColor":{"desktop":"bg-1"},"ftLayout":{"desktop":"contain"},"ftShape":{"desktop":{"shape":"custom","shapeLinked":false,"width":"100%","gap":"","shapeValue":"","customShapeValue":"","height":"300px"},"mobile":{"shape":"original","shapeLinked":true,"width":"","customShapeValue":"","height":"200px","gap":""},"tablet":{"shape":"original","shapeLinked":true,"width":"","customShapeValue":"","height":"200px","gap":""}},"itemSpacing":{"desktop":"var(--g-s-s)","mobile":"var(--g-s-s)"},"layout":{"desktop":"cover"},"position":{"desktop":"only-feature","mobile":"only-feature","tablet":"only-feature"},"ratioLayout":{"desktop":[20,80],"mobile":[20,80],"tablet":[20,80]},"ratioLayoutRight":{"desktop":[80,20],"mobile":[80,20],"tablet":[80,20]},"shape":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeFor1Col":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeFor2Col":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"50%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeForBottom":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"20%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeForFtOnly":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"spacing":{"desktop":"var(--g-s-s)","mobile":"var(--g-s-s)"},"verticalLayout":{"desktop":false},"verticalLayoutRow":{"desktop":true}}, "productUrl":{{product.url | json | escape}}, "product":{{product | json | escape}}, "collectionUrl": {{ collection.url | json | escape }}, "collection": {{ collection | json | escape}}
+    }
+  '
+      section-id="{{section.id}}"
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l)"
+      data-id="gvt2jWTvHq"
+      class="gvt2jWTvHq gp-overflow-hidden"
+    >
+      <div
+        class="{%- if product.media.size > 1 -%} gp-grid gp-w-full !gp-m-0 gp-relative {%- else -%} gp-w-full !gp-m-0 gp-relative {%- endif -%}"
+        {%- if product.media.size > 1 -%}
+        style="--gtc:minmax(0, 12fr);--gtc-tablet:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--gg:var(--g-s-s);--gg-mobile:var(--g-s-s)"
+        {%- else -%}
+        style="--gtc:minmax(0, 12fr);--gg:var(--g-s-s);--gg-mobile:var(--g-s-s)"
+        {%- endif -%}
+      >
+        
+    {% capture featureImageOnlyOne %}
+      
+        {% assign featureMedia = variant.featured_media %}
+        {% unless featureMedia %}
+        {% assign featureMedia = product.featured_media %}
+        {% endunless %}
+        {% if product.media.size > 1 %}
+          
+          {% assign featureMedia = variant.featured_media %}
+          {% unless featureMedia %}
+          {% assign featureMedia = product.featured_media %}
+          {% endunless %}
+        
+        {% endif %}
+        {% assign largestRatio = 0 %}
+        {% assign height = featureMedia.height | times: 1.0 %}
+        {% assign width = featureMedia.width | times: 1.0 %}
+        {% assign ratio = height | divided_by: width %}
+        {% if ratio > largestRatio %}
+          {% assign largestRatio = ratio %}
+        {% endif %}
+        {% assign productImageWidth = 0 %}
+        {% case featureMedia.media_type %}
+          {% when 'image' %}
+            {% assign productImageWidth = featureMedia.width %}
+          {% else %}
+            {% assign productImageWidth = featureMedia.preview_image.width %}
+        {% endcase %}
+        {% if featureMedia == null %}
+        {% assign productImageWidth = 1600 %}
+        {% endif %}
+        <div 
+          class='gp-feature-image-carousel gp-feature-image-only' 
+          style="--o:0;--o-tablet:0;--o-mobile:0;--d:flex;--d-mobile:flex;--d-tablet:flex;--jc:center;--jc-tablet:center;--jc-mobile:center"
+        >
+          <div 
+            class="gp-relative"
+            style="--w:100%;--w-tablet:100%;--w-mobile:100%"
+          >
+            
+      
+    
+            <div 
+              type="gp-feature-image-only"
+              product-id="{{product.id}}"
+              product-media="{{product.media.size}}"
+              class="gp-image-item gp-ft-image-item gp-group gp-z-0 gp-flex !gp-max-w-full !gp-w-full gp-relative gp-items-start gp-justify-center gp-overflow-hidden gp-featured-image-wrapper"
+              style="--h:300px;--h-tablet:200px;--h-mobile:200px;width:{{productImageWidth}}px"
+            >
+              <div 
+                class="gp-w-full  {% if featureMedia == null or featureMedia.media_type == 'image' %} {{ 'gp-h-0' }} {% else %} {{ 'gp-h-full !gp-pb-0' }} {% endif %} gp-relative" 
+                style="--pb: 300px;--pb-tablet: 200px;--pb-mobile: 200px; {% if featureMedia.media_type == 'video' or featureMedia.media_type == 'external_video' %} {{ 'display: flex; align-items: center; justify-content: center' }} {% endif %}"
+              >
+                
+    {% case featureMedia.media_type %}
+      {% when 'image' %}
+        
+      
+    {% assign src = featureMedia.src %}
+    
+    
+  <img
+      id="{%- if featureMedia != null -%}
+              {{featureMedia.id}}
+            {%- endif -%}"
+      
+      draggable="false"
+      class="gp-w-full gp-h-full gp-absolute gp-top-0 gp-left-0 featured-image-only gp-cursor-pointer !gp-rounded-none gp-w-full gp-transition-opacity {{shouldHidden}} gp_lazyload"
+      data-src="{{src | image_url}}" data-srcset="{%- if src != null -%}
+              {{src | img_url: '480x480'}} 480w, {{src | img_url: '768x768'}} 768w,{{src | img_url: '1024x1024'}} 1024w,{{src | img_url: '1440x1440'}} 1440w
+            {%- else -%}
+              {{ 'https://cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_large.gif' }}
+            {%- endif -%}" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgaGVpZ2h0PSJ7e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9Imcte3tmZWF0dXJlTWVkaWEud2lkdGh9fS17e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgaGVpZ2h0PSJ7e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgaGVpZ2h0PSJ7e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSIgZmlsbD0idXJsKCNnLXt7ZmVhdHVyZU1lZGlhLndpZHRofX0te3tmZWF0dXJlTWVkaWEuaGVpZ2h0fX0pIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii17e2ZlYXR1cmVNZWRpYS53aWR0aH19IiB0bz0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiICAvPgogIDwvc3ZnPg==" width="{{featureMedia.width}}" height="{{featureMedia.height}}" alt="{{featureMedia.alt}}" base-src="{{src | image_url}}"
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="--aspect:{{featureMedia.width}}/{{featureMedia.height}};--aspect-tablet:{{featureMedia.width}}/{{featureMedia.height}};--aspect-mobile:{{featureMedia.width}}/{{featureMedia.height}};--objf:contain"
+    />
+  
+      
+      
+    
+      {% when 'external_video' %}
+        {% assign mediaSourceVideo = featureMedia | external_video_url %}
+        
+    <iframe
+      width="100%" height="100%"
+      class="feature-video gp-w-full gp-h-full gp-relative"
+      src="{{mediaSourceVideo}}"
+      controls="true"
+      allowfullscreen="true"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      frameborder="0"
+      autoplay="false"
+      alt="{{featureMedia.alt}}"
+      style="--aspect-tablet:;--aspect-mobile:"
+    >
+    </iframe>
+  
+      {% when 'video' %}
+        {% assign mediaSourceVideo = featureMedia.sources.last.url %}
+        
+  <gp-lite-html5-embed>
+    
+    <video
+      id="gp-video-undefined"
+      class=" gp-w-full lazy"
+      style="width:100%;max-height:100%"
+      controls
+      
+      
+      
+      title="{{featureMedia.alt}}"
+      preload="none"
+      data-src="{{mediaSourceVideo}}"
+      src=""
+      poster=""
+      playsinline
+    >
+    
+  </video>
+    <div
+          style="width:100%;max-height:100%"
+           class="gp-absolute gp-top-0 gp-left-0  gp-w-full gp-thumbnail-video gp-hidden"
+        >
+          <img
+            id="video-thumbnail"
+            src=""
+            class="gp-w-full gp-h-full gp-object-cover"
+            alt="Video Thumbnail"
+          ></img>
+          <button
+            type="button"
+            class="gp-absolute gp-left-1/2 gp-top-1/2 gp-flex gp-aspect-[56/32] gp-w-14 -gp-translate-x-1/2 -gp-translate-y-1/2 gp-items-center gp-justify-center gp-rounded gp-bg-black/80 gp-transition-colors hover:gp-bg-[#ef0800]"
+            aria-label="Play"
+          >
+            <svg class="gp-w-5 gp-text-white" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M5 5.274c0-1.707 1.826-2.792 3.325-1.977l12.362 6.726c1.566.853 1.566 3.101 0 3.953L8.325 20.702C6.826 21.518 5 20.432 5 18.726V5.274Z"
+              />
+            </svg>
+          </button>
+        </div>
+        </gp-lite-html5-embed>
+        <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-lite-html5-embed.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+        if(lazyLoadInstance){lazyLoadInstance.update()}else{var lazyLoadInstance = new LazyLoad()}
+    </script>
+  
+      {% when 'model' %}
+        
+    <model-viewer
+      class="gp-w-full gp-h-full model-viewer gp-z-[90]"
+      width="100%"
+      
+      
+      
+      
+      src="{% if featureMedia.sources.first.url contains '.glb' %}{{ featureMedia.sources.first.url }}{% else %}{{featureMedia.sources.last.url}}{% endif %}"
+      alt="{{featureMedia.preview_image.alt}}"
+      camera-controls="true"
+      poster="{{featureMedia.preview_image.src | product_img_url: '1024x1024'}}"
+      data-js-focus-visible=""
+      data-shopify-feature="1.12"
+      ar-status="not-presenting"
+      style="--aspect:1/1;--aspect-tablet:1/1;--aspect-mobile:1/1">
+    </model-viewer>
+  
+      {% else %}
+        
+    
+  <img
+      
+      
+      draggable="false"
+      class="gp-w-full gp-h-full gp-absolute gp-top-0 gp-left-0 featured-image-only gp-cursor-pointer !gp-rounded-none gp_lazyload"
+      data-src data-srcset="https://cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_large.gif" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt="No Image"
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="--aspect:2237/1678;--aspect-tablet:2237/1678;--aspect-mobile:2237/1678;--objf:contain"
+    />
+  
+    {% endcase %}
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    {% endcapture %}
+    {% if product.media.size > 1 %}
+      
+      {{ featureImageOnlyOne }}
+    {% else %}
+      {{ featureImageOnlyOne }}
+    {% endif %}
+  
+         
+      </div>
+    </gp-product-images-v2>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-images-v2.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  <div gp-el-wrapper style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-xs)" class="guuXC2_wjM ">
+      
+    {%- unless product -%}
+      <p>{{ "gempages.ProductTitle.product_not_found" | t }}</p>
+    {%- else -%}
+      
+        <a href="{{ product.url }}" title="{{ product.title }}" class="gp-product-title-link-wrapper">
+        
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="guuXC2_wjM">
+    <div
+      
+        class="guuXC2_wjM "
+        style="--tt:default"
+      >
+      <div  >
+        <h2
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A']"
+          style="--w:100%;--ta:center;--line-clamp:2;--line-clamp-tablet:2;--line-clamp-mobile:0;--c:#242424;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word;overflow:hidden"
+        >{{ product.title }}</h2>
+      </div>
+    </div>
+    </gp-text>
+    
+        </a>
+      
+    {%- endunless -%}
+  
+      </div>
+       
+      
+    <div
+      enableLazyloadImage parentTag="Col" id="gIXIxJwiJI" data-id="gIXIxJwiJI"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:var(undefined);--cg:var(--g-s-s);--pc:center;--gtc:minmax(0, auto) minmax(0, auto);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gIXIxJwiJI gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gaYO9iKwhL gp-relative gp-flex gp-flex-col"
+    >
+      
+      <gp-product-price
+        data-id="g2xUKfGsvE"
+        class="g2xUKfGsvE gp-product-price group-data-[state=loading]:gp-invisible data-[hidden=true]:gp-hidden"
+        gp-data='{"priceType":"regular","uid":"g2xUKfGsvE","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
+        
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mr:var(undefined)"
+        data-hidden="false"
+      >
+        
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="">
+    <div
+      id="p-price-g2xUKfGsvE"
+        class=" "
+        
+      >
+      <div  >
+        <div
+          type="regular"
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-price gp-money gp-decoration-g-highlight"
+          style="--w:100%;--tdc:highlight;--tdt:1;--ta:left;--c:#242424;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-body, body);--weight:700;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word;overflow:hidden"
+        >
+     {% if variant.price %} 
+       {{ variant.price | money}}
+     {% endif %}
+   </div>
+      </div>
+    </div>
+    </gp-text>
+    
+      </gp-product-price>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-price.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div><div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gwR0FiAxEl gp-relative gp-flex gp-flex-col"
+    >
+      
+      <gp-product-price
+        data-id="gwHR6LEMrn"
+        class="gwHR6LEMrn gp-product-price group-data-[state=loading]:gp-invisible data-[hidden=true]:gp-hidden"
+        gp-data='{"priceType":"compare","uid":"gwHR6LEMrn","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
+        
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+        data-hidden="{% if variant.compare_at_price > variant.price and variant.compare_at_price >= 0 %}false{% else %}true{% endif %}"
+      >
+        
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="">
+    <div
+      id="p-price-gwHR6LEMrn"
+        class=" "
+        
+      >
+      <div  >
+        <div
+          type="compare"
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-price gp-product-compare-price gp-line-through"
+          style="--w:100%;--tdc:#B4B4B4;--tdt:1;--ta:left;--c:#B4B4B4;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word;overflow:hidden"
+        >
+      {% if variant.compare_at_price  %} 
+        {{ variant.compare_at_price | money}}
+      {% else %}
+        
+      {% endif %}
+    </div>
+      </div>
+    </div>
+    </gp-text>
+    
+      </gp-product-price>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-price.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+    </div>
+   
+    
+    </div>
+    </div>
+   
+    
+          {%- endform -%}
+        </product-form>
+      </gp-product>
+      {%- assign product = gpBkProduct -%}
+    {% else %}
+      <div class="gp-text-center">{{ "gempages.Product.product_not_found" | t }}</div>
+    {%- endif -%}
+     <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product.v2.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div><div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gegFMXt-MN gp-relative gp-flex gp-flex-col"
+    >
+      
+    
+    {%- assign gpBkProduct = product -%}
+    
+        {%- liquid
+          if request.page_type == 'product'
+            if 'static' == 'static'
+              if '9158705381703' == 'latest'
+                paginate collections.all.products by 100000
+                  assign product = collections.all.products | sort: 'created_at' | reverse | first
+                endpaginate
+              else
+                assign product = all_products['tiras-de-pestanas']
+                assign productId = '9158705381703' | times: 1
+                if product == empty or product == null
+                  paginate collections.all.products by 100000
+                    for item in collections.all.products
+                      if item.id == productId
+                        assign product = item
+                      endif
+                    endfor
+                  endpaginate
+                endif
+              endif
+            endif
+          else
+            if '9158705381703' == 'latest'
+              paginate collections.all.products by 100000
+                assign product = collections.all.products | sort: 'created_at'| reverse | first
+              endpaginate
+            else
+              assign product = all_products['tiras-de-pestanas']
+              assign productId = '9158705381703' | times: 1
+              if product == empty or product == null
+                paginate collections.all.products by 100000
+                  for item in collections.all.products
+                    if item.id == productId
+                      assign product = item
+                    endif
+                  endfor
+                endpaginate
+              endif
+            endif
+          endif
+        -%}
+      
+
+    {%-if product != empty and product != null -%}
+      {%- assign initVariantId =  -%}
+      {%- assign product_form_id = 'product-form-' | append: "gbPbf9pmqo" -%}
+      {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%-if productSelectedVariant == empty or productSelectedVariant == null -%}
+        {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      {%-if variant == empty or variant == null -%}
+        {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      <gp-product data-uid="gbPbf9pmqo" data-id="gbPbf9pmqo"   gp-context='{"productId": {{ product.id }}, "isSyncProduct": "", "variantSelected": {{ variant | json | escape }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
+        gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1, "productUrl":{{ product.url | json | escape }}, "productHandle":{{ product.handle | json | escape }}, "collectionUrl": {{ collection.url | json | escape }}, "collectionHandle": {{ collection.handle | json | escape }}}'>
+        <product-form class="product-form">
+          {%- form 'product', product, id: product_form_id, class: 'form contents', data-type: 'add-to-cart-form', autocomplete: 'off'  -%}
+            <input type="hidden" name="id" value="{{ variant.id }}" />
+            <input type="hidden" name="quantity" value="{{ quantity }}" />
+            <button type="submit" onclick="return false;" style="display:none;"></button>
+            
+       
+      
+    <div
+      id="gbPbf9pmqo" data-id="gbPbf9pmqo-row"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--cg:30px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%"
+        class="gbPbf9pmqo gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gh3qAFdoEG gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign featured_image = product.featured_image %}
+  {%- if variant != null and variant.featured_image != null -%}
+  {% assign featured_image = variant.featured_image %}
+  {%- endif -%}
+    <gp-product-images-v2
+      gp-data='
+    {
+      "id":"gWAW1QZODy",
+      "pageContext": {"isTranslateWithLocale":true,"sectionName":"gp-global-section-509365895684949095"},
+      "setting":{"arrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n              <rect width=\"32\" height=\"32\" rx=\"16\" fill=\"white\"/>\n              <path d=\"M12.7434 20.8964C12.4176 21.2223 12.4176 21.7506 12.7434 22.0764C13.0693 22.4023 13.5976 22.4023 13.9234 22.0764L19.6227 16.3771C19.8311 16.1687 19.8311 15.8308 19.6227 15.6224L13.9234 9.9231C13.5976 9.59725 13.0693 9.59725 12.7434 9.9231C12.4176 10.2489 12.4176 10.7772 12.7434 11.1031L17.6401 15.9998L12.7434 20.8964Z\" fill=\"black\"/>\n              </svg>\n              ","borderActive":{"border":"solid","borderType":"none","borderWidth":"1px","color":"#000000","isCustom":"false","width":"1px 1px 1px 1px"},"clickOpenLightBox":{"desktop":false,"mobile":false,"tablet":false},"dragToScroll":true,"ftArrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM10.6828 8.13017C10.5266 7.95661 10.2734 7.95661 10.1172 8.13017C9.96095 8.30374 9.96095 8.58515 10.1172 8.75871L13.0343 12L10.1172 15.2413C9.96095 15.4149 9.96095 15.6963 10.1172 15.8698C10.2734 16.0434 10.5266 16.0434 10.6828 15.8698L13.8828 12.3143C14.0391 12.1407 14.0391 11.8593 13.8828 11.6857L10.6828 8.13017Z\" fill=\"currentColor\"/>\n    </svg>","ftArrowIconColor":"#000000","ftClickOpenLightBox":{"desktop":"product-link"},"ftDotActiveColor":{"desktop":"line-3","mobile":"line-3","tablet":"line-3"},"ftDotColor":{"desktop":"bg-1","mobile":"bg-1","tablet":"bg-1"},"ftDotGapToCarousel":{"desktop":16,"mobile":16,"tablet":16},"ftDotSize":{"desktop":12,"mobile":12,"tablet":12},"ftDotStyle":{"desktop":"none","mobile":"none","tablet":"none"},"ftNavigationPosition":{"desktop":"none","mobile":"none","tablet":"none"},"hoverEffect":"none","loop":{"desktop":false},"navigationPosition":{"desktop":"inside","mobile":"inside","tablet":"inside"},"otherImage":0,"pauseOnHover":true,"speed":1,"type":{"desktop":"images","mobile":"images","tablet":"images"},"typeDisplay":"all-images","zoom":150,"zoomType":"default"},
+      "styles":{"align":{"desktop":"center","mobile":"center","tablet":"center"},"dotActiveColor":{"desktop":"line-3"},"dotColor":{"desktop":"bg-1"},"ftLayout":{"desktop":"contain"},"ftShape":{"desktop":{"shape":"custom","shapeLinked":false,"width":"100%","gap":"","shapeValue":"","customShapeValue":"","height":"300px"},"mobile":{"shape":"original","shapeLinked":true,"width":"","customShapeValue":"","height":"200px","gap":""},"tablet":{"shape":"original","shapeLinked":true,"width":"","customShapeValue":"","height":"200px","gap":""}},"itemSpacing":{"desktop":"var(--g-s-s)","mobile":"var(--g-s-s)"},"layout":{"desktop":"cover"},"position":{"desktop":"only-feature","mobile":"only-feature","tablet":"only-feature"},"ratioLayout":{"desktop":[20,80],"mobile":[20,80],"tablet":[20,80]},"ratioLayoutRight":{"desktop":[80,20],"mobile":[80,20],"tablet":[80,20]},"shape":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeFor1Col":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeFor2Col":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"50%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeForBottom":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"20%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeForFtOnly":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"spacing":{"desktop":"var(--g-s-s)","mobile":"var(--g-s-s)"},"verticalLayout":{"desktop":false},"verticalLayoutRow":{"desktop":true}}, "productUrl":{{product.url | json | escape}}, "product":{{product | json | escape}}, "collectionUrl": {{ collection.url | json | escape }}, "collection": {{ collection | json | escape}}
+    }
+  '
+      section-id="{{section.id}}"
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l)"
+      data-id="gWAW1QZODy"
+      class="gWAW1QZODy gp-overflow-hidden"
+    >
+      <div
+        class="{%- if product.media.size > 1 -%} gp-grid gp-w-full !gp-m-0 gp-relative {%- else -%} gp-w-full !gp-m-0 gp-relative {%- endif -%}"
+        {%- if product.media.size > 1 -%}
+        style="--gtc:minmax(0, 12fr);--gtc-tablet:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--gg:var(--g-s-s);--gg-mobile:var(--g-s-s)"
+        {%- else -%}
+        style="--gtc:minmax(0, 12fr);--gg:var(--g-s-s);--gg-mobile:var(--g-s-s)"
+        {%- endif -%}
+      >
+        
+    {% capture featureImageOnlyOne %}
+      
+        {% assign featureMedia = variant.featured_media %}
+        {% unless featureMedia %}
+        {% assign featureMedia = product.featured_media %}
+        {% endunless %}
+        {% if product.media.size > 1 %}
+          
+          {% assign featureMedia = variant.featured_media %}
+          {% unless featureMedia %}
+          {% assign featureMedia = product.featured_media %}
+          {% endunless %}
+        
+        {% endif %}
+        {% assign largestRatio = 0 %}
+        {% assign height = featureMedia.height | times: 1.0 %}
+        {% assign width = featureMedia.width | times: 1.0 %}
+        {% assign ratio = height | divided_by: width %}
+        {% if ratio > largestRatio %}
+          {% assign largestRatio = ratio %}
+        {% endif %}
+        {% assign productImageWidth = 0 %}
+        {% case featureMedia.media_type %}
+          {% when 'image' %}
+            {% assign productImageWidth = featureMedia.width %}
+          {% else %}
+            {% assign productImageWidth = featureMedia.preview_image.width %}
+        {% endcase %}
+        {% if featureMedia == null %}
+        {% assign productImageWidth = 1600 %}
+        {% endif %}
+        <div 
+          class='gp-feature-image-carousel gp-feature-image-only' 
+          style="--o:0;--o-tablet:0;--o-mobile:0;--d:flex;--d-mobile:flex;--d-tablet:flex;--jc:center;--jc-tablet:center;--jc-mobile:center"
+        >
+          <div 
+            class="gp-relative"
+            style="--w:100%;--w-tablet:100%;--w-mobile:100%"
+          >
+            
+      
+    
+            <div 
+              type="gp-feature-image-only"
+              product-id="{{product.id}}"
+              product-media="{{product.media.size}}"
+              class="gp-image-item gp-ft-image-item gp-group gp-z-0 gp-flex !gp-max-w-full !gp-w-full gp-relative gp-items-start gp-justify-center gp-overflow-hidden gp-featured-image-wrapper"
+              style="--h:300px;--h-tablet:200px;--h-mobile:200px;width:{{productImageWidth}}px"
+            >
+              <div 
+                class="gp-w-full  {% if featureMedia == null or featureMedia.media_type == 'image' %} {{ 'gp-h-0' }} {% else %} {{ 'gp-h-full !gp-pb-0' }} {% endif %} gp-relative" 
+                style="--pb: 300px;--pb-tablet: 200px;--pb-mobile: 200px; {% if featureMedia.media_type == 'video' or featureMedia.media_type == 'external_video' %} {{ 'display: flex; align-items: center; justify-content: center' }} {% endif %}"
+              >
+                
+    {% case featureMedia.media_type %}
+      {% when 'image' %}
+        
+      
+    {% assign src = featureMedia.src %}
+    
+    
+  <img
+      id="{%- if featureMedia != null -%}
+              {{featureMedia.id}}
+            {%- endif -%}"
+      
+      draggable="false"
+      class="gp-w-full gp-h-full gp-absolute gp-top-0 gp-left-0 featured-image-only gp-cursor-pointer !gp-rounded-none gp-w-full gp-transition-opacity {{shouldHidden}} gp_lazyload"
+      data-src="{{src | image_url}}" data-srcset="{%- if src != null -%}
+              {{src | img_url: '480x480'}} 480w, {{src | img_url: '768x768'}} 768w,{{src | img_url: '1024x1024'}} 1024w,{{src | img_url: '1440x1440'}} 1440w
+            {%- else -%}
+              {{ 'https://cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_large.gif' }}
+            {%- endif -%}" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgaGVpZ2h0PSJ7e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9Imcte3tmZWF0dXJlTWVkaWEud2lkdGh9fS17e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgaGVpZ2h0PSJ7e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgaGVpZ2h0PSJ7e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSIgZmlsbD0idXJsKCNnLXt7ZmVhdHVyZU1lZGlhLndpZHRofX0te3tmZWF0dXJlTWVkaWEuaGVpZ2h0fX0pIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii17e2ZlYXR1cmVNZWRpYS53aWR0aH19IiB0bz0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiICAvPgogIDwvc3ZnPg==" width="{{featureMedia.width}}" height="{{featureMedia.height}}" alt="{{featureMedia.alt}}" base-src="{{src | image_url}}"
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="--aspect:{{featureMedia.width}}/{{featureMedia.height}};--aspect-tablet:{{featureMedia.width}}/{{featureMedia.height}};--aspect-mobile:{{featureMedia.width}}/{{featureMedia.height}};--objf:contain"
+    />
+  
+      
+      
+    
+      {% when 'external_video' %}
+        {% assign mediaSourceVideo = featureMedia | external_video_url %}
+        
+    <iframe
+      width="100%" height="100%"
+      class="feature-video gp-w-full gp-h-full gp-relative"
+      src="{{mediaSourceVideo}}"
+      controls="true"
+      allowfullscreen="true"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      frameborder="0"
+      autoplay="false"
+      alt="{{featureMedia.alt}}"
+      style="--aspect-tablet:;--aspect-mobile:"
+    >
+    </iframe>
+  
+      {% when 'video' %}
+        {% assign mediaSourceVideo = featureMedia.sources.last.url %}
+        
+  <gp-lite-html5-embed>
+    
+    <video
+      id="gp-video-undefined"
+      class=" gp-w-full lazy"
+      style="width:100%;max-height:100%"
+      controls
+      
+      
+      
+      title="{{featureMedia.alt}}"
+      preload="none"
+      data-src="{{mediaSourceVideo}}"
+      src=""
+      poster=""
+      playsinline
+    >
+    
+  </video>
+    <div
+          style="width:100%;max-height:100%"
+           class="gp-absolute gp-top-0 gp-left-0  gp-w-full gp-thumbnail-video gp-hidden"
+        >
+          <img
+            id="video-thumbnail"
+            src=""
+            class="gp-w-full gp-h-full gp-object-cover"
+            alt="Video Thumbnail"
+          ></img>
+          <button
+            type="button"
+            class="gp-absolute gp-left-1/2 gp-top-1/2 gp-flex gp-aspect-[56/32] gp-w-14 -gp-translate-x-1/2 -gp-translate-y-1/2 gp-items-center gp-justify-center gp-rounded gp-bg-black/80 gp-transition-colors hover:gp-bg-[#ef0800]"
+            aria-label="Play"
+          >
+            <svg class="gp-w-5 gp-text-white" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M5 5.274c0-1.707 1.826-2.792 3.325-1.977l12.362 6.726c1.566.853 1.566 3.101 0 3.953L8.325 20.702C6.826 21.518 5 20.432 5 18.726V5.274Z"
+              />
+            </svg>
+          </button>
+        </div>
+        </gp-lite-html5-embed>
+        <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-lite-html5-embed.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+        if(lazyLoadInstance){lazyLoadInstance.update()}else{var lazyLoadInstance = new LazyLoad()}
+    </script>
+  
+      {% when 'model' %}
+        
+    <model-viewer
+      class="gp-w-full gp-h-full model-viewer gp-z-[90]"
+      width="100%"
+      
+      
+      
+      
+      src="{% if featureMedia.sources.first.url contains '.glb' %}{{ featureMedia.sources.first.url }}{% else %}{{featureMedia.sources.last.url}}{% endif %}"
+      alt="{{featureMedia.preview_image.alt}}"
+      camera-controls="true"
+      poster="{{featureMedia.preview_image.src | product_img_url: '1024x1024'}}"
+      data-js-focus-visible=""
+      data-shopify-feature="1.12"
+      ar-status="not-presenting"
+      style="--aspect:1/1;--aspect-tablet:1/1;--aspect-mobile:1/1">
+    </model-viewer>
+  
+      {% else %}
+        
+    
+  <img
+      
+      
+      draggable="false"
+      class="gp-w-full gp-h-full gp-absolute gp-top-0 gp-left-0 featured-image-only gp-cursor-pointer !gp-rounded-none gp_lazyload"
+      data-src data-srcset="https://cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_large.gif" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt="No Image"
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="--aspect:2237/1678;--aspect-tablet:2237/1678;--aspect-mobile:2237/1678;--objf:contain"
+    />
+  
+    {% endcase %}
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    {% endcapture %}
+    {% if product.media.size > 1 %}
+      
+      {{ featureImageOnlyOne }}
+    {% else %}
+      {{ featureImageOnlyOne }}
+    {% endif %}
+  
+         
+      </div>
+    </gp-product-images-v2>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-images-v2.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  <div gp-el-wrapper style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-xs)" class="gW8QkownBV ">
+      
+    {%- unless product -%}
+      <p>{{ "gempages.ProductTitle.product_not_found" | t }}</p>
+    {%- else -%}
+      
+        <a href="{{ product.url }}" title="{{ product.title }}" class="gp-product-title-link-wrapper">
+        
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gW8QkownBV">
+    <div
+      
+        class="gW8QkownBV "
+        style="--tt:default"
+      >
+      <div  >
+        <h2
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A']"
+          style="--w:100%;--ta:center;--line-clamp:2;--line-clamp-tablet:2;--line-clamp-mobile:0;--c:#242424;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word;overflow:hidden"
+        >{{ product.title }}</h2>
+      </div>
+    </div>
+    </gp-text>
+    
+        </a>
+      
+    {%- endunless -%}
+  
+      </div>
+       
+      
+    <div
+      enableLazyloadImage parentTag="Col" id="gnqtaJSGpQ" data-id="gnqtaJSGpQ"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:var(undefined);--cg:var(--g-s-s);--pc:center;--gtc:minmax(0, auto) minmax(0, auto);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gnqtaJSGpQ gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gUJV3YC6a7 gp-relative gp-flex gp-flex-col"
+    >
+      
+      <gp-product-price
+        data-id="gvUD57Jswk"
+        class="gvUD57Jswk gp-product-price group-data-[state=loading]:gp-invisible data-[hidden=true]:gp-hidden"
+        gp-data='{"priceType":"regular","uid":"gvUD57Jswk","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
+        
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mr:var(undefined)"
+        data-hidden="false"
+      >
+        
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="">
+    <div
+      id="p-price-gvUD57Jswk"
+        class=" "
+        
+      >
+      <div  >
+        <div
+          type="regular"
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-price gp-money gp-decoration-g-highlight"
+          style="--w:100%;--tdc:highlight;--tdt:1;--ta:left;--c:#242424;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-body, body);--weight:700;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word;overflow:hidden"
+        >
+     {% if variant.price %} 
+       {{ variant.price | money}}
+     {% endif %}
+   </div>
+      </div>
+    </div>
+    </gp-text>
+    
+      </gp-product-price>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-price.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div><div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="g-eF3Uoz48 gp-relative gp-flex gp-flex-col"
+    >
+      
+      <gp-product-price
+        data-id="gB1BHchjjK"
+        class="gB1BHchjjK gp-product-price group-data-[state=loading]:gp-invisible data-[hidden=true]:gp-hidden"
+        gp-data='{"priceType":"compare","uid":"gB1BHchjjK","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
+        
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+        data-hidden="{% if variant.compare_at_price > variant.price and variant.compare_at_price >= 0 %}false{% else %}true{% endif %}"
+      >
+        
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="">
+    <div
+      id="p-price-gB1BHchjjK"
+        class=" "
+        
+      >
+      <div  >
+        <div
+          type="compare"
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-price gp-product-compare-price gp-line-through"
+          style="--w:100%;--tdc:#B4B4B4;--tdt:1;--ta:left;--c:#B4B4B4;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word;overflow:hidden"
+        >
+      {% if variant.compare_at_price  %} 
+        {{ variant.compare_at_price | money}}
+      {% else %}
+        
+      {% endif %}
+    </div>
+      </div>
+    </div>
+    </gp-text>
+    
+      </gp-product-price>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-price.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+    </div>
+   
+    
+    </div>
+    </div>
+   
+    
+          {%- endform -%}
+        </product-form>
+      </gp-product>
+      {%- assign product = gpBkProduct -%}
+    {% else %}
+      <div class="gp-text-center">{{ "gempages.Product.product_not_found" | t }}</div>
+    {%- endif -%}
+     <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product.v2.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div><div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="g3G3qWn4_k gp-relative gp-flex gp-flex-col"
+    >
+      
+    
+    {%- assign gpBkProduct = product -%}
+    
+        {%- liquid
+          if request.page_type == 'product'
+            if 'static' == 'static'
+              if '9156921917767' == 'latest'
+                paginate collections.all.products by 100000
+                  assign product = collections.all.products | sort: 'created_at' | reverse | first
+                endpaginate
+              else
+                assign product = all_products['abanicos-prearmados-rizo-c']
+                assign productId = '9156921917767' | times: 1
+                if product == empty or product == null
+                  paginate collections.all.products by 100000
+                    for item in collections.all.products
+                      if item.id == productId
+                        assign product = item
+                      endif
+                    endfor
+                  endpaginate
+                endif
+              endif
+            endif
+          else
+            if '9156921917767' == 'latest'
+              paginate collections.all.products by 100000
+                assign product = collections.all.products | sort: 'created_at'| reverse | first
+              endpaginate
+            else
+              assign product = all_products['abanicos-prearmados-rizo-c']
+              assign productId = '9156921917767' | times: 1
+              if product == empty or product == null
+                paginate collections.all.products by 100000
+                  for item in collections.all.products
+                    if item.id == productId
+                      assign product = item
+                    endif
+                  endfor
+                endpaginate
+              endif
+            endif
+          endif
+        -%}
+      
+
+    {%-if product != empty and product != null -%}
+      {%- assign initVariantId =  -%}
+      {%- assign product_form_id = 'product-form-' | append: "gpZhoDs-M5" -%}
+      {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%-if productSelectedVariant == empty or productSelectedVariant == null -%}
+        {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      {%-if variant == empty or variant == null -%}
+        {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      <gp-product data-uid="gpZhoDs-M5" data-id="gpZhoDs-M5"   gp-context='{"productId": {{ product.id }}, "isSyncProduct": "", "variantSelected": {{ variant | json | escape }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
+        gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1, "productUrl":{{ product.url | json | escape }}, "productHandle":{{ product.handle | json | escape }}, "collectionUrl": {{ collection.url | json | escape }}, "collectionHandle": {{ collection.handle | json | escape }}}'>
+        <product-form class="product-form">
+          {%- form 'product', product, id: product_form_id, class: 'form contents', data-type: 'add-to-cart-form', autocomplete: 'off'  -%}
+            <input type="hidden" name="id" value="{{ variant.id }}" />
+            <input type="hidden" name="quantity" value="{{ quantity }}" />
+            <button type="submit" onclick="return false;" style="display:none;"></button>
+            
+       
+      
+    <div
+      id="gpZhoDs-M5" data-id="gpZhoDs-M5-row"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--cg:30px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%"
+        class="gpZhoDs-M5 gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gd0BqoYEEY gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign featured_image = product.featured_image %}
+  {%- if variant != null and variant.featured_image != null -%}
+  {% assign featured_image = variant.featured_image %}
+  {%- endif -%}
+    <gp-product-images-v2
+      gp-data='
+    {
+      "id":"g0Y9Kz_CKH",
+      "pageContext": {"isTranslateWithLocale":true,"sectionName":"gp-global-section-509365895684949095"},
+      "setting":{"arrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n              <rect width=\"32\" height=\"32\" rx=\"16\" fill=\"white\"/>\n              <path d=\"M12.7434 20.8964C12.4176 21.2223 12.4176 21.7506 12.7434 22.0764C13.0693 22.4023 13.5976 22.4023 13.9234 22.0764L19.6227 16.3771C19.8311 16.1687 19.8311 15.8308 19.6227 15.6224L13.9234 9.9231C13.5976 9.59725 13.0693 9.59725 12.7434 9.9231C12.4176 10.2489 12.4176 10.7772 12.7434 11.1031L17.6401 15.9998L12.7434 20.8964Z\" fill=\"black\"/>\n              </svg>\n              ","borderActive":{"border":"solid","borderType":"none","borderWidth":"1px","color":"#000000","isCustom":"false","width":"1px 1px 1px 1px"},"clickOpenLightBox":{"desktop":false,"mobile":false,"tablet":false},"dragToScroll":true,"ftArrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM10.6828 8.13017C10.5266 7.95661 10.2734 7.95661 10.1172 8.13017C9.96095 8.30374 9.96095 8.58515 10.1172 8.75871L13.0343 12L10.1172 15.2413C9.96095 15.4149 9.96095 15.6963 10.1172 15.8698C10.2734 16.0434 10.5266 16.0434 10.6828 15.8698L13.8828 12.3143C14.0391 12.1407 14.0391 11.8593 13.8828 11.6857L10.6828 8.13017Z\" fill=\"currentColor\"/>\n    </svg>","ftArrowIconColor":"#000000","ftClickOpenLightBox":{"desktop":"product-link"},"ftDotActiveColor":{"desktop":"line-3","mobile":"line-3","tablet":"line-3"},"ftDotColor":{"desktop":"bg-1","mobile":"bg-1","tablet":"bg-1"},"ftDotGapToCarousel":{"desktop":16,"mobile":16,"tablet":16},"ftDotSize":{"desktop":12,"mobile":12,"tablet":12},"ftDotStyle":{"desktop":"none","mobile":"none","tablet":"none"},"ftNavigationPosition":{"desktop":"none","mobile":"none","tablet":"none"},"hoverEffect":"none","loop":{"desktop":false},"navigationPosition":{"desktop":"inside","mobile":"inside","tablet":"inside"},"otherImage":0,"pauseOnHover":true,"speed":1,"type":{"desktop":"images","mobile":"images","tablet":"images"},"typeDisplay":"all-images","zoom":150,"zoomType":"default"},
+      "styles":{"align":{"desktop":"center","mobile":"center","tablet":"center"},"dotActiveColor":{"desktop":"line-3"},"dotColor":{"desktop":"bg-1"},"ftLayout":{"desktop":"contain"},"ftShape":{"desktop":{"shape":"custom","shapeLinked":false,"width":"100%","gap":"","height":"300px","shapeValue":"","customShapeValue":""},"mobile":{"shape":"original","shapeLinked":true,"width":"","customShapeValue":"","height":"200px","gap":""},"tablet":{"shape":"original","shapeLinked":true,"width":"","customShapeValue":"","height":"200px","gap":""}},"itemSpacing":{"desktop":"var(--g-s-s)","mobile":"var(--g-s-s)"},"layout":{"desktop":"cover"},"position":{"desktop":"only-feature","mobile":"only-feature","tablet":"only-feature"},"ratioLayout":{"desktop":[20,80],"mobile":[20,80],"tablet":[20,80]},"ratioLayoutRight":{"desktop":[80,20],"mobile":[80,20],"tablet":[80,20]},"shape":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeFor1Col":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeFor2Col":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"50%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeForBottom":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"20%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeForFtOnly":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"spacing":{"desktop":"var(--g-s-s)","mobile":"var(--g-s-s)"},"verticalLayout":{"desktop":false},"verticalLayoutRow":{"desktop":true}}, "productUrl":{{product.url | json | escape}}, "product":{{product | json | escape}}, "collectionUrl": {{ collection.url | json | escape }}, "collection": {{ collection | json | escape}}
+    }
+  '
+      section-id="{{section.id}}"
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l)"
+      data-id="g0Y9Kz_CKH"
+      class="g0Y9Kz_CKH gp-overflow-hidden"
+    >
+      <div
+        class="{%- if product.media.size > 1 -%} gp-grid gp-w-full !gp-m-0 gp-relative {%- else -%} gp-w-full !gp-m-0 gp-relative {%- endif -%}"
+        {%- if product.media.size > 1 -%}
+        style="--gtc:minmax(0, 12fr);--gtc-tablet:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--gg:var(--g-s-s);--gg-mobile:var(--g-s-s)"
+        {%- else -%}
+        style="--gtc:minmax(0, 12fr);--gg:var(--g-s-s);--gg-mobile:var(--g-s-s)"
+        {%- endif -%}
+      >
+        
+    {% capture featureImageOnlyOne %}
+      
+        {% assign featureMedia = variant.featured_media %}
+        {% unless featureMedia %}
+        {% assign featureMedia = product.featured_media %}
+        {% endunless %}
+        {% if product.media.size > 1 %}
+          
+          {% assign featureMedia = variant.featured_media %}
+          {% unless featureMedia %}
+          {% assign featureMedia = product.featured_media %}
+          {% endunless %}
+        
+        {% endif %}
+        {% assign largestRatio = 0 %}
+        {% assign height = featureMedia.height | times: 1.0 %}
+        {% assign width = featureMedia.width | times: 1.0 %}
+        {% assign ratio = height | divided_by: width %}
+        {% if ratio > largestRatio %}
+          {% assign largestRatio = ratio %}
+        {% endif %}
+        {% assign productImageWidth = 0 %}
+        {% case featureMedia.media_type %}
+          {% when 'image' %}
+            {% assign productImageWidth = featureMedia.width %}
+          {% else %}
+            {% assign productImageWidth = featureMedia.preview_image.width %}
+        {% endcase %}
+        {% if featureMedia == null %}
+        {% assign productImageWidth = 1600 %}
+        {% endif %}
+        <div 
+          class='gp-feature-image-carousel gp-feature-image-only' 
+          style="--o:0;--o-tablet:0;--o-mobile:0;--d:flex;--d-mobile:flex;--d-tablet:flex;--jc:center;--jc-tablet:center;--jc-mobile:center"
+        >
+          <div 
+            class="gp-relative"
+            style="--w:100%;--w-tablet:100%;--w-mobile:100%"
+          >
+            
+      
+    
+            <div 
+              type="gp-feature-image-only"
+              product-id="{{product.id}}"
+              product-media="{{product.media.size}}"
+              class="gp-image-item gp-ft-image-item gp-group gp-z-0 gp-flex !gp-max-w-full !gp-w-full gp-relative gp-items-start gp-justify-center gp-overflow-hidden gp-featured-image-wrapper"
+              style="--h:300px;--h-tablet:200px;--h-mobile:200px;width:{{productImageWidth}}px"
+            >
+              <div 
+                class="gp-w-full  {% if featureMedia == null or featureMedia.media_type == 'image' %} {{ 'gp-h-0' }} {% else %} {{ 'gp-h-full !gp-pb-0' }} {% endif %} gp-relative" 
+                style="--pb: 300px;--pb-tablet: 200px;--pb-mobile: 200px; {% if featureMedia.media_type == 'video' or featureMedia.media_type == 'external_video' %} {{ 'display: flex; align-items: center; justify-content: center' }} {% endif %}"
+              >
+                
+    {% case featureMedia.media_type %}
+      {% when 'image' %}
+        
+      
+    {% assign src = featureMedia.src %}
+    
+    
+  <img
+      id="{%- if featureMedia != null -%}
+              {{featureMedia.id}}
+            {%- endif -%}"
+      
+      draggable="false"
+      class="gp-w-full gp-h-full gp-absolute gp-top-0 gp-left-0 featured-image-only gp-cursor-pointer !gp-rounded-none gp-w-full gp-transition-opacity {{shouldHidden}} gp_lazyload"
+      data-src="{{src | image_url}}" data-srcset="{%- if src != null -%}
+              {{src | img_url: '480x480'}} 480w, {{src | img_url: '768x768'}} 768w,{{src | img_url: '1024x1024'}} 1024w,{{src | img_url: '1440x1440'}} 1440w
+            {%- else -%}
+              {{ 'https://cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_large.gif' }}
+            {%- endif -%}" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgaGVpZ2h0PSJ7e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9Imcte3tmZWF0dXJlTWVkaWEud2lkdGh9fS17e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgaGVpZ2h0PSJ7e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgaGVpZ2h0PSJ7e2ZlYXR1cmVNZWRpYS5oZWlnaHR9fSIgZmlsbD0idXJsKCNnLXt7ZmVhdHVyZU1lZGlhLndpZHRofX0te3tmZWF0dXJlTWVkaWEuaGVpZ2h0fX0pIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii17e2ZlYXR1cmVNZWRpYS53aWR0aH19IiB0bz0ie3tmZWF0dXJlTWVkaWEud2lkdGh9fSIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiICAvPgogIDwvc3ZnPg==" width="{{featureMedia.width}}" height="{{featureMedia.height}}" alt="{{featureMedia.alt}}" base-src="{{src | image_url}}"
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="--aspect:{{featureMedia.width}}/{{featureMedia.height}};--aspect-tablet:{{featureMedia.width}}/{{featureMedia.height}};--aspect-mobile:{{featureMedia.width}}/{{featureMedia.height}};--objf:contain"
+    />
+  
+      
+      
+    
+      {% when 'external_video' %}
+        {% assign mediaSourceVideo = featureMedia | external_video_url %}
+        
+    <iframe
+      width="100%" height="100%"
+      class="feature-video gp-w-full gp-h-full gp-relative"
+      src="{{mediaSourceVideo}}"
+      controls="true"
+      allowfullscreen="true"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      frameborder="0"
+      autoplay="false"
+      alt="{{featureMedia.alt}}"
+      style="--aspect-tablet:;--aspect-mobile:"
+    >
+    </iframe>
+  
+      {% when 'video' %}
+        {% assign mediaSourceVideo = featureMedia.sources.last.url %}
+        
+  <gp-lite-html5-embed>
+    
+    <video
+      id="gp-video-undefined"
+      class=" gp-w-full lazy"
+      style="width:100%;max-height:100%"
+      controls
+      
+      
+      
+      title="{{featureMedia.alt}}"
+      preload="none"
+      data-src="{{mediaSourceVideo}}"
+      src=""
+      poster=""
+      playsinline
+    >
+    
+  </video>
+    <div
+          style="width:100%;max-height:100%"
+           class="gp-absolute gp-top-0 gp-left-0  gp-w-full gp-thumbnail-video gp-hidden"
+        >
+          <img
+            id="video-thumbnail"
+            src=""
+            class="gp-w-full gp-h-full gp-object-cover"
+            alt="Video Thumbnail"
+          ></img>
+          <button
+            type="button"
+            class="gp-absolute gp-left-1/2 gp-top-1/2 gp-flex gp-aspect-[56/32] gp-w-14 -gp-translate-x-1/2 -gp-translate-y-1/2 gp-items-center gp-justify-center gp-rounded gp-bg-black/80 gp-transition-colors hover:gp-bg-[#ef0800]"
+            aria-label="Play"
+          >
+            <svg class="gp-w-5 gp-text-white" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M5 5.274c0-1.707 1.826-2.792 3.325-1.977l12.362 6.726c1.566.853 1.566 3.101 0 3.953L8.325 20.702C6.826 21.518 5 20.432 5 18.726V5.274Z"
+              />
+            </svg>
+          </button>
+        </div>
+        </gp-lite-html5-embed>
+        <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-lite-html5-embed.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+        if(lazyLoadInstance){lazyLoadInstance.update()}else{var lazyLoadInstance = new LazyLoad()}
+    </script>
+  
+      {% when 'model' %}
+        
+    <model-viewer
+      class="gp-w-full gp-h-full model-viewer gp-z-[90]"
+      width="100%"
+      
+      
+      
+      
+      src="{% if featureMedia.sources.first.url contains '.glb' %}{{ featureMedia.sources.first.url }}{% else %}{{featureMedia.sources.last.url}}{% endif %}"
+      alt="{{featureMedia.preview_image.alt}}"
+      camera-controls="true"
+      poster="{{featureMedia.preview_image.src | product_img_url: '1024x1024'}}"
+      data-js-focus-visible=""
+      data-shopify-feature="1.12"
+      ar-status="not-presenting"
+      style="--aspect:1/1;--aspect-tablet:1/1;--aspect-mobile:1/1">
+    </model-viewer>
+  
+      {% else %}
+        
+    
+  <img
+      
+      
+      draggable="false"
+      class="gp-w-full gp-h-full gp-absolute gp-top-0 gp-left-0 featured-image-only gp-cursor-pointer !gp-rounded-none gp_lazyload"
+      data-src data-srcset="https://cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_large.gif" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt="No Image"
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="--aspect:2237/1678;--aspect-tablet:2237/1678;--aspect-mobile:2237/1678;--objf:contain"
+    />
+  
+    {% endcase %}
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    {% endcapture %}
+    {% if product.media.size > 1 %}
+      
+      {{ featureImageOnlyOne }}
+    {% else %}
+      {{ featureImageOnlyOne }}
+    {% endif %}
+  
+         
+      </div>
+    </gp-product-images-v2>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-images-v2.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  <div gp-el-wrapper style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-xs)" class="gEUX8ildnZ ">
+      
+    {%- unless product -%}
+      <p>{{ "gempages.ProductTitle.product_not_found" | t }}</p>
+    {%- else -%}
+      
+        <a href="{{ product.url }}" title="{{ product.title }}" class="gp-product-title-link-wrapper">
+        
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gEUX8ildnZ">
+    <div
+      
+        class="gEUX8ildnZ "
+        style="--tt:default"
+      >
+      <div  >
+        <h2
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A']"
+          style="--w:100%;--ta:center;--line-clamp:2;--line-clamp-tablet:2;--line-clamp-mobile:0;--c:#242424;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word;overflow:hidden"
+        >{{ product.title }}</h2>
+      </div>
+    </div>
+    </gp-text>
+    
+        </a>
+      
+    {%- endunless -%}
+  
+      </div>
+       
+      
+    <div
+      enableLazyloadImage parentTag="Col" id="gNdQfX_LUT" data-id="gNdQfX_LUT"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:var(undefined);--cg:var(--g-s-s);--pc:center;--gtc:minmax(0, auto) minmax(0, auto);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gNdQfX_LUT gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="g3SA7ks-7a gp-relative gp-flex gp-flex-col"
+    >
+      
+      <gp-product-price
+        data-id="gdmb-mK5Kg"
+        class="gdmb-mK5Kg gp-product-price group-data-[state=loading]:gp-invisible data-[hidden=true]:gp-hidden"
+        gp-data='{"priceType":"regular","uid":"gdmb-mK5Kg","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
+        
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mr:var(undefined)"
+        data-hidden="false"
+      >
+        
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="">
+    <div
+      id="p-price-gdmb-mK5Kg"
+        class=" "
+        
+      >
+      <div  >
+        <div
+          type="regular"
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-price gp-money gp-decoration-g-highlight"
+          style="--w:100%;--tdc:highlight;--tdt:1;--ta:left;--c:#242424;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-body, body);--weight:700;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word;overflow:hidden"
+        >
+     {% if variant.price %} 
+       {{ variant.price | money}}
+     {% endif %}
+   </div>
+      </div>
+    </div>
+    </gp-text>
+    
+      </gp-product-price>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-price.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div><div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gdjbYpRSMe gp-relative gp-flex gp-flex-col"
+    >
+      
+      <gp-product-price
+        data-id="giJrx_OZFC"
+        class="giJrx_OZFC gp-product-price group-data-[state=loading]:gp-invisible data-[hidden=true]:gp-hidden"
+        gp-data='{"priceType":"compare","uid":"giJrx_OZFC","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
+        
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+        data-hidden="{% if variant.compare_at_price > variant.price and variant.compare_at_price >= 0 %}false{% else %}true{% endif %}"
+      >
+        
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="">
+    <div
+      id="p-price-giJrx_OZFC"
+        class=" "
+        
+      >
+      <div  >
+        <div
+          type="compare"
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-price gp-product-compare-price gp-line-through"
+          style="--w:100%;--tdc:#B4B4B4;--tdt:1;--ta:left;--c:#B4B4B4;--fs:normal;--ff:var(--g-font-DM-Sans, 'DM Sans'), var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word;overflow:hidden"
+        >
+      {% if variant.compare_at_price  %} 
+        {{ variant.compare_at_price | money}}
+      {% else %}
+        
+      {% endif %}
+    </div>
+      </div>
+    </div>
+    </gp-text>
+    
+      </gp-product-price>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-price.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+    </div>
+   
+    
+    </div>
+    </div>
+   
+    
+          {%- endform -%}
+        </product-form>
+      </gp-product>
+      {%- assign product = gpBkProduct -%}
+    {% else %}
+      <div class="gp-text-center">{{ "gempages.Product.product_not_found" | t }}</div>
+    {%- endif -%}
+     <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product.v2.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+    </div>
+   
+    
+    </div>
+    </div>
+  
+            </section>
+           
+    
+<style {% if section.settings.section_preload == "false" %} class="gps-link" type="text/disabled-css" {% endif %}>@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxRSW3w.woff) format('woff');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwARZtRSW3w.woff) format('woff');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6z9mXgjU0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6z9mXgjU0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+
+{% schema %}
+  {
+    "presets": [{ "name": "recomendados" }],
+    "name": "recomendados",
+    "tag": "section",
+    "class": "gps-509365895684949095 gps gpsil",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/807a28-6b/apps/gempages-cro/app/shopify/edit?pageType=THEME_SECTION&editorId=509365895684949095)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"off_lazy_script"},{"type":"text","label":"Checksum","id":"checksum"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {"es":{}}
+  }
+{% endschema %}

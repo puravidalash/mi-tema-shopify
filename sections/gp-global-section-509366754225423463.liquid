@@ -1,0 +1,313 @@
+
+{% render 'gp-head', 'isThemeSection: true' %}
+<style {% if section.settings.section_preload == "false" %} class="gps-link gps-style" type="text/disabled-css" {% endif %}>.gps-509366754225423463.gps.gpsil [style*="--ai:"]{align-items:var(--ai)}.gps-509366754225423463.gps.gpsil [style*="--aspect:"]{aspect-ratio:var(--aspect)}.gps-509366754225423463.gps.gpsil [style*="--bg:"]{background:var(--bg)}.gps-509366754225423463.gps.gpsil [style*="--bga:"]{background-attachment:var(--bga)}.gps-509366754225423463.gps.gpsil [style*="--bgc:"]{background-color:var(--bgc)}.gps-509366754225423463.gps.gpsil [style*="--bgi:"]{background-image:var(--bgi)}.gps-509366754225423463.gps.gpsil [style*="--bgp:"]{background-position:var(--bgp)}.gps-509366754225423463.gps.gpsil [style*="--bgr:"]{background-repeat:var(--bgr)}.gps-509366754225423463.gps.gpsil [style*="--bgs:"]{background-size:var(--bgs)}.gps-509366754225423463.gps.gpsil [style*="--b:"]{border:var(--b)}.gps-509366754225423463.gps.gpsil [style*="--bc:"]{border-color:var(--bc)}.gps-509366754225423463.gps.gpsil [style*="--bs:"]{border-style:var(--bs)}.gps-509366754225423463.gps.gpsil [style*="--bw:"]{border-width:var(--bw)}.gps-509366754225423463.gps.gpsil [style*="--shadow:"]{box-shadow:var(--shadow)}.gps-509366754225423463.gps.gpsil [style*="--c:"]{color:var(--c)}.gps-509366754225423463.gps.gpsil [style*="--cg:"]{-moz-column-gap:var(--cg);column-gap:var(--cg)}.gps-509366754225423463.gps.gpsil [style*="--ff:"]{font-family:var(--ff)}.gps-509366754225423463.gps.gpsil [style*="--size:"]{font-size:var(--size)}.gps-509366754225423463.gps.gpsil [style*="--weight:"]{font-weight:var(--weight)}.gps-509366754225423463.gps.gpsil [style*="--fs:"]{font-style:var(--fs)}.gps-509366754225423463.gps.gpsil [style*="--gtc:"]{grid-template-columns:var(--gtc)}.gps-509366754225423463.gps.gpsil [style*="--h:"]{height:var(--h)}.gps-509366754225423463.gps.gpsil [style*="--jc:"]{justify-content:var(--jc)}.gps-509366754225423463.gps.gpsil [style*="--ls:"]{letter-spacing:var(--ls)}.gps-509366754225423463.gps.gpsil [style*="--lh:"]{line-height:var(--lh)}.gps-509366754225423463.gps.gpsil [style*="--m:"]{margin:var(--m)}.gps-509366754225423463.gps.gpsil [style*="--mb:"]{margin-bottom:var(--mb)}.gps-509366754225423463.gps.gpsil [style*="--objf:"]{-o-object-fit:var(--objf);object-fit:var(--objf)}.gps-509366754225423463.gps.gpsil [style*="--op:"]{opacity:var(--op)}.gps-509366754225423463.gps.gpsil [style*="--o:"]{order:var(--o)}.gps-509366754225423463.gps.gpsil [style*="--pc:"]{place-content:var(--pc)}.gps-509366754225423463.gps.gpsil [style*="--p:"]{padding:var(--p)}.gps-509366754225423463.gps.gpsil [style*="--pb:"]{padding-bottom:var(--pb)}.gps-509366754225423463.gps.gpsil [style*="--pl:"]{padding-left:var(--pl)}.gps-509366754225423463.gps.gpsil [style*="--pr:"]{padding-right:var(--pr)}.gps-509366754225423463.gps.gpsil [style*="--pt:"]{padding-top:var(--pt)}.gps-509366754225423463.gps.gpsil [style*="--ta:"]{text-align:var(--ta)}.gps-509366754225423463.gps.gpsil [style*="--ts:"]{text-shadow:var(--ts)}.gps-509366754225423463.gps.gpsil [style*="--tt:"]{text-transform:var(--tt)}.gps-509366754225423463.gps.gpsil [style*="--t:"]{transform:var(--t)}.gps-509366754225423463.gps.gpsil [style*="--v:"]{visibility:var(--v)}.gps-509366754225423463.gps.gpsil [style*="--w:"]{width:var(--w)}@media only screen and (max-width:1024px){.gps-509366754225423463.gps.gpsil [style*="--size-tablet:"]{font-size:var(--size-tablet)}.gps-509366754225423463.gps.gpsil [style*="--h-tablet:"]{height:var(--h-tablet)}.gps-509366754225423463.gps.gpsil [style*="--lh-tablet:"]{line-height:var(--lh-tablet)}.gps-509366754225423463.gps.gpsil [style*="--pl-tablet:"]{padding-left:var(--pl-tablet)}.gps-509366754225423463.gps.gpsil [style*="--pr-tablet:"]{padding-right:var(--pr-tablet)}.gps-509366754225423463.gps.gpsil [style*="--v-tablet:"]{visibility:var(--v-tablet)}.gps-509366754225423463.gps.gpsil [style*="--w-tablet:"]{width:var(--w-tablet)}}@media only screen and (max-width:767px){.gps-509366754225423463.gps.gpsil [style*="--cg-mobile:"]{-moz-column-gap:var(--cg-mobile);column-gap:var(--cg-mobile)}.gps-509366754225423463.gps.gpsil [style*="--size-mobile:"]{font-size:var(--size-mobile)}.gps-509366754225423463.gps.gpsil [style*="--h-mobile:"]{height:var(--h-mobile)}.gps-509366754225423463.gps.gpsil [style*="--lh-mobile:"]{line-height:var(--lh-mobile)}.gps-509366754225423463.gps.gpsil [style*="--mb-mobile:"]{margin-bottom:var(--mb-mobile)}.gps-509366754225423463.gps.gpsil [style*="--pb-mobile:"]{padding-bottom:var(--pb-mobile)}.gps-509366754225423463.gps.gpsil [style*="--pl-mobile:"]{padding-left:var(--pl-mobile)}.gps-509366754225423463.gps.gpsil [style*="--pr-mobile:"]{padding-right:var(--pr-mobile)}.gps-509366754225423463.gps.gpsil [style*="--pt-mobile:"]{padding-top:var(--pt-mobile)}.gps-509366754225423463.gps.gpsil [style*="--v-mobile:"]{visibility:var(--v-mobile)}.gps-509366754225423463.gps.gpsil [style*="--w-mobile:"]{width:var(--w-mobile)}}.gps-509366754225423463 .gp-relative{position:relative}.gps-509366754225423463 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-509366754225423463 .gp-mb-0{margin-bottom:0}.gps-509366754225423463 .gp-flex{display:flex}.gps-509366754225423463 .gp-grid{display:grid}.gps-509366754225423463 .gp-contents{display:contents}.gps-509366754225423463 .\!gp-hidden{display:none!important}.gps-509366754225423463 .gp-hidden{display:none}.gps-509366754225423463 .gp-h-full{height:100%}.gps-509366754225423463 .gp-w-full{width:100%}.gps-509366754225423463 .gp-max-w-full{max-width:100%}.gps-509366754225423463 .gp-flex-col{flex-direction:column}.gps-509366754225423463 .gp-gap-y-0{row-gap:0}.gps-509366754225423463 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-509366754225423463 .gp-duration-200{transition-duration:.2s}.gps-509366754225423463 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@media (max-width:1024px){.gps-509366754225423463 .tablet\:\!gp-hidden{display:none!important}.gps-509366754225423463 .tablet\:gp-hidden{display:none}}@media (max-width:767px){.gps-509366754225423463 .mobile\:\!gp-hidden{display:none!important}.gps-509366754225423463 .mobile\:gp-hidden{display:none}}.gps-509366754225423463 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}.gps-509366754225423463 .\[\&_p\]\:gp-inline p{display:inline}.gps-509366754225423463 .\[\&_p\]\:after\:gp-whitespace-pre-wrap p:after{content:var(--tw-content);white-space:pre-wrap}.gps-509366754225423463 .\[\&_p\]\:after\:gp-content-\[\'\\A\'\] p:after{--tw-content:"\A";content:var(--tw-content)}</style>
+
+  <gp-animation
+    gp-interaction-wrapper
+    display-init="show"
+    gp-data='{"config":{"desktop":{"enabled":true,"trigger":"appear","triggerConfig":{"appear":{"animation":"zoom","setting":{"fade":{"delay":"0","easing":"ease-out","speed":1.7},"shake":{"delay":"0","easing":"linear","intensity":11,"loop":false,"speed":0.7},"slide":{"delay":"0","direction":"left","easing":"ease-out","isCustomDistance":false,"speed":1.7},"zoom":{"delay":"0","easing":"ease-out","isFade":true,"scale":{"in":[80,100],"out":[120,100]},"speed":1.7,"zoomDirection":"in"}}},"hover":{"animation":"none","setting":{"fade":{"delay":"0","easing":"ease-out","speed":1.7},"shake":{"delay":"0","easing":"linear","intensity":11,"loop":false,"speed":0.7},"slide":{"delay":"0","direction":"left","easing":"ease-out","isCustomDistance":false,"speed":1.7},"zoom":{"delay":"0","easing":"ease-out","isFade":false,"scale":{"in":[100,120],"out":[100,80]},"speed":1.7,"zoomDirection":"in"}}}}},"mobile":{"enabled":true,"trigger":"appear","triggerConfig":{"appear":{"animation":"zoom","setting":{"fade":{"delay":"0","easing":"ease-out","speed":1.7},"shake":{"delay":"0","easing":"linear","intensity":11,"loop":false,"speed":0.7},"slide":{"delay":"0","direction":"left","easing":"ease-out","isCustomDistance":false,"speed":1.7},"zoom":{"delay":"0","easing":"ease-out","isFade":true,"scale":{"in":[80,100],"out":[120,100]},"speed":1.7,"zoomDirection":"in"}}},"hover":{"animation":"none","setting":{"fade":{"delay":"0","easing":"ease-out","speed":1.7},"shake":{"delay":"0","easing":"linear","intensity":11,"loop":false,"speed":0.7},"slide":{"delay":"0","direction":"left","easing":"ease-out","isCustomDistance":false,"speed":1.7},"zoom":{"delay":"0","easing":"ease-out","isFade":false,"scale":{"in":[100,120],"out":[100,80]},"speed":1.7,"zoomDirection":"in"}}}}}},"tag":"Section","notEnableAnimationWhenInit":false}'
+    style="display:contents"
+  >
+    <div style="--v:hidden;--v-tablet:hidden;--v-mobile:hidden;display:contents">
+       
+      
+            <section
+              class="gp-mx-auto gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+              style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:0px;--pl-tablet:0px;--pl-mobile:0px;--pr:0px;--pr-tablet:0px;--pr-mobile:0px"
+            >
+              
+    <div
+      enableLazyloadImage id="0bhkbDufkD" data-id="0bhkbDufkD"
+        style="--pt:72px;--pl:15px;--pb:72px;--pr:15px;--pt-mobile:56px;--pl-mobile:15px;--pb-mobile:56px;--pr-mobile:15px;--cg:30px;--gtc:minmax(0, 24fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:linear-gradient(130deg, #FFFFFF 0%, #FFFFFF 100%);--bgi:linear-gradient(130deg, #FFFFFF 0%, #FFFFFF 100%);--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="0bhkbDufkD gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="laWmBL2Y4l gp-relative gp-flex gp-flex-col"
+    >
+      
+       
+      
+    <div
+      enableLazyloadImage parentTag="Col" id="g3rKe6YXLh" data-id="g3rKe6YXLh"
+        style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--mb:var(--g-s-3xl);--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="g3rKe6YXLh gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="g3d-K83dpK gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="b5ut-pF3Ll">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="b5ut-pF3Ll "
+        style="--tt:capitalize;--ta:center;--mb:var(--g-s-s);--textColor:#666666"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:center;--c:#121212;--ff:var(--g-font-Abel, 'Abel'), var(--g-font-heading, heading);--weight:400;--size:32px;--size-tablet:32px;--size-mobile:29px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--tt:capitalize;word-break:break-word;overflow:hidden"
+        >{{ "sections.gp-global-section-509366754225423463.gb5ut-pF3Ll_text_html" | t | replace: '$locationOrigin', locationOrigin | downcase }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+    </div>
+    </div>
+   
+    
+       
+      
+    <div
+      enableLazyloadImage parentTag="Col" id="2HXQVwEiXb" data-id="2HXQVwEiXb"
+        style="--cg:30px;--cg-mobile:20px;--gtc:minmax(0, 4fr) minmax(0, 4fr) minmax(0, 4fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="2HXQVwEiXb gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="k_1P4w64da gp-relative gp-flex gp-flex-col"
+    >
+      <div
+    
+     data-id="3NlYPwYFQO"
+    role="presentation"
+    class="gp-group/image 3NlYPwYFQO"
+    style="--ta:center"
+    >
+      <div
+        class="pointer-events-auto h-full gp-flex"
+        
+        class="gp-h-full gp-w-full"
+        style="border-radius:inherit;overflow:hidden;--jc:center"
+      >
+        
+  <picture style="border-radius: inherit" class="gp-contents">
+  
+      <source media="(max-width: 767px)" data-srcSet="https://ucarecdn.com/b84f7695-ea91-4329-ad9a-85f90272b9d0/-/format/auto/-/preview/3000x3000/-/quality/lighter/" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTQwLTE0MCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0idXJsKCNnLTE0MC0xNDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNDAiIHRvPSIxNDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="https://ucarecdn.com/b84f7695-ea91-4329-ad9a-85f90272b9d0/-/format/auto/-/preview/3000x3000/-/quality/lighter/" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTQwLTE0MCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0idXJsKCNnLTE0MC0xNDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNDAiIHRvPSIxNDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <img
+        
+        class="gp-h-full gp-max-w-full gp-flex gp_lazyload"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTQwLTE0MCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0idXJsKCNnLTE0MC0xNDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNDAiIHRvPSIxNDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4="
+        data-src="https://ucarecdn.com/b84f7695-ea91-4329-ad9a-85f90272b9d0/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+        width="100%"
+        alt="Alt Image"
+        style="--aspect:auto;--objf:cover;--w:70px;--w-tablet:70px;--w-mobile:70px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+      />
+    
+  </picture>
+      </div>
+  </div>
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="-a0meDcphb">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="-a0meDcphb "
+        style="--tt:default;--ta:center;--mb:var(--g-s-s);--pt:24px;--textColor:#000000"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:center;--c:#000000;--fs:normal;--ff:var(--g-font-Abel, 'Abel'), var(--g-font-body, body);--weight:600;--ls:normal;--size:22px;--size-tablet:21px;--size-mobile:19px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;--tt:capitalize;word-break:break-word;overflow:hidden"
+        >{{ "sections.gp-global-section-509366754225423463.g-a0meDcphb_text_html" | t | replace: '$locationOrigin', locationOrigin | downcase }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="Clf6X3nKxw">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="Clf6X3nKxw "
+        style="--tt:default;--ta:center;--pt:0px;--mb-mobile:24px;--pt-mobile:0px;--textColor:#666666"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:center;--c:#666666;--fs:normal;--ff:var(--g-font-Abel, 'Abel'), var(--g-font-body, body);--weight:400;--ls:normal;--size:20px;--size-tablet:16px;--size-mobile:14px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;word-break:break-word;overflow:hidden"
+        >{{ "sections.gp-global-section-509366754225423463.gClf6X3nKxw_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+    </div><div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      
+      class="LRlqNeO5e3 gp-relative gp-flex gp-flex-col"
+    >
+      <div
+    
+     data-id="3VBppy4Rwh"
+    role="presentation"
+    class="gp-group/image 3VBppy4Rwh"
+    style="--ta:center"
+    >
+      <div
+        class="pointer-events-auto h-full gp-flex"
+        
+        class="gp-h-full gp-w-full"
+        style="border-radius:inherit;overflow:hidden;--jc:center"
+      >
+        
+  <picture style="border-radius: inherit" class="gp-contents">
+  
+      <source media="(max-width: 767px)" data-srcSet="https://ucarecdn.com/af39ce61-1fe6-456e-a92a-1d0d00816009/-/format/auto/-/preview/3000x3000/-/quality/lighter/" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTQwLTE0MCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0idXJsKCNnLTE0MC0xNDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNDAiIHRvPSIxNDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="https://ucarecdn.com/af39ce61-1fe6-456e-a92a-1d0d00816009/-/format/auto/-/preview/3000x3000/-/quality/lighter/" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTQwLTE0MCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0idXJsKCNnLTE0MC0xNDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNDAiIHRvPSIxNDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <img
+        
+        class="gp-h-full gp-max-w-full gp-flex gp_lazyload"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTQwLTE0MCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0idXJsKCNnLTE0MC0xNDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNDAiIHRvPSIxNDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4="
+        data-src="https://ucarecdn.com/af39ce61-1fe6-456e-a92a-1d0d00816009/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+        width="100%"
+        alt="Alt Image"
+        style="--aspect:auto;--objf:cover;--w:70px;--w-tablet:70px;--w-mobile:70px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+      />
+    
+  </picture>
+      </div>
+  </div>
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="ajM8hcAocX">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="ajM8hcAocX "
+        style="--tt:default;--ta:center;--mb:var(--g-s-s);--pt:24px;--textColor:#000000"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:center;--c:#000000;--fs:normal;--ff:var(--g-font-Abel, 'Abel'), var(--g-font-body, body);--weight:600;--ls:normal;--size:22px;--size-tablet:21px;--size-mobile:19px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;--tt:capitalize;word-break:break-word;overflow:hidden"
+        >{{ "sections.gp-global-section-509366754225423463.gajM8hcAocX_text_html" | t | replace: '$locationOrigin', locationOrigin | downcase }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="mfFbqlv9P-">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="mfFbqlv9P- "
+        style="--tt:default;--ta:center;--pt:0px;--mb-mobile:24px;--pt-mobile:0px;--textColor:#666666"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:center;--c:#666666;--fs:normal;--ff:var(--g-font-Abel, 'Abel'), var(--g-font-body, body);--weight:400;--ls:normal;--size:20px;--size-tablet:16px;--size-mobile:14px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;word-break:break-word;overflow:hidden"
+        >{{ "sections.gp-global-section-509366754225423463.gmfFbqlv9P-_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+    </div><div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      
+      class="c6rQGtymQr gp-relative gp-flex gp-flex-col"
+    >
+      <div
+    
+     data-id="5xcTxOwDz9"
+    role="presentation"
+    class="gp-group/image 5xcTxOwDz9"
+    style="--ta:center"
+    >
+      <div
+        class="pointer-events-auto h-full gp-flex"
+        
+        class="gp-h-full gp-w-full"
+        style="border-radius:inherit;overflow:hidden;--jc:center"
+      >
+        
+  <picture style="border-radius: inherit" class="gp-contents">
+  
+      <source media="(max-width: 767px)" data-srcSet="https://ucarecdn.com/fca40142-edd7-409e-8745-b88457eecd17/-/format/auto/-/preview/3000x3000/-/quality/lighter/" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTQwLTE0MCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0idXJsKCNnLTE0MC0xNDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNDAiIHRvPSIxNDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="https://ucarecdn.com/fca40142-edd7-409e-8745-b88457eecd17/-/format/auto/-/preview/3000x3000/-/quality/lighter/" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTQwLTE0MCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0idXJsKCNnLTE0MC0xNDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNDAiIHRvPSIxNDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <img
+        
+        class="gp-h-full gp-max-w-full gp-flex gp_lazyload"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTQwLTE0MCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0idXJsKCNnLTE0MC0xNDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xNDAiIHRvPSIxNDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4="
+        data-src="https://ucarecdn.com/fca40142-edd7-409e-8745-b88457eecd17/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+        width="100%"
+        alt="Alt Image"
+        style="--aspect:auto;--objf:cover;--w:70px;--w-tablet:70px;--w-mobile:70px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+      />
+    
+  </picture>
+      </div>
+  </div>
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="w64mMlXe24">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="w64mMlXe24 "
+        style="--tt:default;--ta:center;--mb:var(--g-s-s);--pt:24px;--textColor:#000000"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:center;--c:#000000;--fs:normal;--ff:var(--g-font-Abel, 'Abel'), var(--g-font-body, body);--weight:600;--ls:normal;--size:22px;--size-tablet:21px;--size-mobile:19px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;--tt:capitalize;word-break:break-word;overflow:hidden"
+        >{{ "sections.gp-global-section-509366754225423463.gw64mMlXe24_text_html" | t | replace: '$locationOrigin', locationOrigin | downcase }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="IvCNv7DVIO">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="IvCNv7DVIO "
+        style="--tt:default;--ta:center;--pt:0px;--textColor:#666666"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:center;--c:#666666;--fs:normal;--ff:var(--g-font-Abel, 'Abel'), var(--g-font-body, body);--weight:400;--ls:normal;--size:20px;--size-tablet:16px;--size-mobile:14px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;word-break:break-word;overflow:hidden"
+        >{{ "sections.gp-global-section-509366754225423463.gIvCNv7DVIO_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+    </div>
+    </div>
+   
+    
+    </div>
+    </div>
+  
+            </section>
+           
+    </div>
+  </gp-animation>
+  <script src="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-animation.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+
+
+{% schema %}
+  {
+    "presets": [{ "name": "nuestros principios" }],
+    "name": "nuestros principios",
+    "tag": "section",
+    "class": "gps-509366754225423463 gps gpsil",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/807a28-6b/apps/gempages-cro/app/shopify/edit?pageType=THEME_SECTION&editorId=509366754225423463)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"off_lazy_script"},{"type":"text","label":"Checksum","id":"checksum"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {"es":{"gb5ut-pF3Ll_text_html":"<p>la excelencia solo se puede crear con estos tres principios</p>","g-a0meDcphb_text_html":"<p>Calidad</p>","gClf6X3nKxw_text_html":"<p>Trabajamos con los mejores profesionales del sector, para dar a nuestros clientes la mejor calidad posible</p>","gajM8hcAocX_text_html":"<p>Confianza</p>","gmfFbqlv9P-_text_html":"<p>Los clientes son nuestra prioridad, por eso damos una atención personalizada para cada uno de ellos</p>","gw64mMlXe24_text_html":"<p>Envio rápido</p>","gIvCNv7DVIO_text_html":"<p>Nuestros envíos son rápidos, olvídate de comprar fuera de España</p><p>1-3 días</p>"}}
+  }
+{% endschema %}
